@@ -1,0 +1,934 @@
+<!doctype html>
+<html class="scroll-smooth scroll-pt-20" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>VEXA</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script src="src/js/tailwind.config.js"></script>
+    <link href="src/css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-background-dark text-slate-100 font-sans antialiased">
+    <!-- ------------------- Header / Navegación ------------------ -->
+    <header class="fixed top-0 w-full z-50 glass border-b border-white/5">
+      <nav
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="h-10 w-10 bg-white rounded-full flex items-center justify-center p-1"
+          >
+            <img
+              alt="VEXA Logo"
+              class="h-full w-full object-contain"
+              src="src/img/LogoVexa.png"
+            />
+          </div>
+          <span
+            class="font-display font-extrabold text-2xl tracking-tight text-white"
+            >VEXA</span
+          >
+        </div>
+        <div class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-transparent"
+            href="#inicio"
+            >Inicio</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-transparent"
+            href="#quienes-somos"
+            >Quiénes Somos</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-transparent"
+            href="#servicios"
+            >Servicios</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-transparent"
+            href="#portafolio"
+            >Portafolio</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#equipo"
+            >Equipo</a
+          >
+          <a
+            class="bg-primary hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all"
+            href="#contacto"
+            >Contacto</a
+          >
+        </div>
+        <button class="md:hidden text-white">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!-- ------------------- Sección Hero ------------------ -->
+      <section
+        class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden"
+        id="inicio"
+      >
+        <div
+          class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-gradient-to-b from-primary/10 to-transparent blur-3xl rounded-full -z-10"
+        ></div>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-8"
+          >
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+              ></span>
+            </span>
+            Innovación Digital de Elite
+          </div>
+          <div class="flex justify-center mb-10">
+            <div
+              class="h-40 w-40 md:h-60 md:w-60 bg-white rounded-full flex items-center justify-center p-4"
+            >
+              <img
+                alt="VEXA Logo Hero"
+                class="h-full w-full object-contain"
+                src="src/img/LogoVexa.png"
+              />
+            </div>
+          </div>
+          <h1
+            class="font-display text-3xl md:text-5xl font-extrabold mb-6 leading-tight max-w-4xl mx-auto text-white"
+          >
+            VEXA: <span class="text-primary">Innovación</span> en Software a tu
+            Medida
+          </h1>
+          <p
+            class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
+          >
+            Especialistas en el desarrollo de experiencias web premium,
+            aplicaciones móviles de alto rendimiento y sistemas robustos de
+            gestión de inventarios para impulsar tu crecimiento.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <a
+              class="w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-[0_0_20px_rgba(84,141,123,0.4)] transition-all"
+              href="#contacto"
+              >Solicitar Cotización</a
+            >
+            <a
+              class="w-full sm:w-auto px-8 py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all"
+              href="#servicios"
+              >Explorar Servicios</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- ------------------- Sección Quiénes Somos ------------------ -->
+      <section class="py-24 bg-accent/30" id="quienes-somos">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+              <div
+                class="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"
+              ></div>
+              <img
+                alt="VEXA Equipo colaborando"
+                class="rounded-2xl shadow-2xl relative z-10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtsRuASG83vK1S37fZ8snixF3i32qrI4jujSe4jCAEeY51Y54w9Xq3_soF6Y1svDyrdz8f6lMkK1tCoe04dsKXJe8RLBUmVdpVBFAC7DzERGIOG-wm15Fo897KfmvihOAfyG5efumX6JwP9H7ZKyLu1hzEuq4A9C9svGHTNxHHFiaK9hfaSl-zYrSKUMtlgdy-1eM6LyTUQbKQZHw-pUWa_vLWnEzcMrisQ7JfaN3IdHfBedrQdrN51gFPpVc7oXTKU3fMKSbkM8ER"
+              />
+              <div
+                class="absolute -bottom-6 -right-6 glass p-6 rounded-2xl hidden md:block z-20"
+              >
+                <div class="text-3xl font-bold text-primary">50+</div>
+                <div class="text-sm text-slate-400">Proyectos Exitosos</div>
+              </div>
+            </div>
+            <div>
+              <h2
+                class="font-display text-3xl md:text-4xl font-bold mb-6 text-white"
+              >
+                Quiénes Somos: Transformando Complejidad en Claridad
+              </h2>
+              <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                En VEXA, no solo escribimos código; resolvemos problemas de
+                negocio. Nuestra agencia nació bajo el principio de que el
+                software premium debe ser accesible, escalable e intuitivo. Nos
+                apasiona construir soluciones digitales que no solo funcionen,
+                sino que superen las expectativas.
+              </p>
+              <div class="space-y-4">
+                <div class="flex gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary"
+                  >
+                    <span class="material-symbols-outlined">verified</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white">
+                      Calidad Sin Compromisos
+                    </h4>
+                    <p class="text-slate-500 text-sm">
+                      Cada línea de código es revisada y optimizada para el
+                      máximo rendimiento.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary"
+                  >
+                    <span class="material-symbols-outlined">speed</span>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white">Despliegue Ágil</h4>
+                    <p class="text-slate-500 text-sm">
+                      Nuestra metodología ágil asegura que tu producto llegue al
+                      mercado más rápido.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------- Sección de Servicios y Metodología ------------------ -->
+      <section class="py-24 relative overflow-hidden" id="servicios">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-20 relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+              Nuestra Metodología
+            </div>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+              Diseño, desarrollo y escala:<br> <span class="text-primary">El Viaje del Código</span>
+            </h2>
+            <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+              No solo hacemos software; construimos ecosistemas digitales. Así es como el equipo de VEXA transforma tu visión en una realidad escalable y de alto rendimiento.
+            </p>
+          </div>
+          
+          <div class="relative max-w-5xl mx-auto">
+            <!-- Línea de Fondo (Timeline) -->
+            <!-- Línea de Progreso Animada -->
+
+            <!-- Paso 1: Diseño -->
+            <div class="process-step relative flex flex-col md:flex-row items-center justify-between mb-24 group">
+              <div class="w-full md:w-5/12 order-2 md:order-1 text-left md:text-right pl-24 md:pl-0 pr-0 md:pr-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">1. Análisis y Diseño UX/UI</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Arquitecturizamos la experiencia del usuario antes de escribir una línea de código. Wireframes interactivos y prototipos de alta fidelidad que garantizan la máxima conversión.</p>
+                <div class="flex gap-2 justify-start md:justify-end flex-wrap">
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Design Systems</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Prototipado</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Figma</span>
+                </div>
+              </div>
+              <!-- Timeline Icon -->
+              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
+                <span class="material-symbols-outlined text-2xl">design_services</span>
+              </div>
+              <div class="w-full md:w-5/12 order-1 md:order-3 pl-24 md:pl-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
+                <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 group-hover:-translate-y-2">
+                  <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all duration-500 group-hover:bg-primary/20"></div>
+              <!-- Gráfico de Wireframe -->
+                  <div class="h-40 bg-black/40 rounded-xl border border-white/5 flex items-center justify-center relative overflow-hidden p-4 group-hover:border-primary/20 transition-colors">
+                     <div class="w-full h-full border border-dashed border-primary/30 rounded-lg flex flex-col p-3 gap-2 relative">
+                        <div class="flex gap-2 w-full">
+                          <div class="w-8 h-8 rounded-full bg-white/10 animate-pulse"></div>
+                          <div class="flex-1 flex flex-col gap-1 justify-center">
+                            <div class="w-full h-2 rounded-full bg-white/10"></div>
+                            <div class="w-2/3 h-2 rounded-full bg-white/5"></div>
+                          </div>
+                        </div>
+                        <div class="w-full h-full mt-2 rounded-md bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center text-primary/50 text-xs">Wireframe</div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 2: Desarrollo Web -->
+            <div class="process-step relative flex flex-col md:flex-row items-center justify-between mb-24 group">
+              <div class="w-full md:w-5/12 order-1 md:order-1 pl-24 md:pl-0 pr-0 md:pr-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
+                 <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 group-hover:-translate-y-2 flex flex-col justify-end">
+                  <div class="absolute bottom-0 left-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -ml-16 -mb-16 transition-all duration-500 group-hover:bg-primary/20"></div>
+                  <!-- Representación de Código -->
+                  <div class="h-40 bg-[#0d1117]/80 rounded-xl border border-white/5 p-4 font-mono text-xs text-left relative overflow-hidden shadow-inner group-hover:border-primary/20 transition-colors">
+                    <div class="flex gap-1.5 mb-3">
+                      <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                      <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                      <div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+                    </div>
+                    <div class="text-slate-400 mb-1"><span class="text-purple-400">import</span> { VexaCore } <span class="text-purple-400">from</span> <span class="text-green-300">'@vexa/core'</span>;</div>
+                    <div class="text-slate-300 mb-1"><span class="text-purple-400">const</span> <span class="text-blue-400">app</span> = <span class=\"text-purple-400\">new</span> <span class="text-yellow-200">VexaCore</span>();</div>
+                    <div class="text-slate-300">app.<span class="text-yellow-200">deploy</span>({</div>
+                    <div class="text-slate-300 pl-4">performance: <span class="text-green-300">'maximum'</span>,</div>
+                    <div class="text-slate-300 pl-4">scale: <span class="text-orange-300">true</span></div>
+                    <div class="text-slate-300">});<span class="animate-pulse text-primary inline-block w-2 bg-primary h-3 ml-1 translate-y-0.5"></span></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Timeline Icon -->
+              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
+                <span class="material-symbols-outlined text-2xl">code_blocks</span>
+              </div>
+              <div class="w-full md:w-5/12 order-2 md:order-3 text-left pl-24 md:pl-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">2. Desarrollo Web & Apps</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Construimos el núcleo de tu producto web. Desarrollamos web apps ultrarrápidas, landing pages interactivas y e-commerce con código limpio y optimizado.</p>
+                <div class="flex gap-2 justify-start flex-wrap">
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Next.js</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Tailwind CSS</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">React</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 3: Apps Móviles -->
+            <div class="process-step relative flex flex-col md:flex-row items-center justify-between mb-24 group">
+              <div class="w-full md:w-5/12 order-2 md:order-1 text-left md:text-right pl-24 md:pl-0 pr-0 md:pr-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">3. Apps Móviles Nativas</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Llevamos tu modelo de negocio directo al bolsillo de tus clientes. Apps para iOS y Android con rendimiento nativo, animaciones fluidas y notificaciones push.</p>
+                <div class="flex gap-2 justify-start md:justify-end flex-wrap">
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">React Native</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Flutter</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Firebase</span>
+                </div>
+              </div>
+              <!-- Timeline Icon -->
+              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
+                <span class="material-symbols-outlined text-2xl">smartphone</span>
+              </div>
+              <div class="w-full md:w-5/12 order-1 md:order-3 pl-24 md:pl-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
+                <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 flex justify-center group-hover:-translate-y-2">
+                  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-primary/10 rounded-full blur-3xl transition-all duration-500 group-hover:bg-primary/20"></div>
+                   <!-- Representación de Teléfono Móvil -->
+                  <div class="w-20 h-40 border-[5px] border-slate-800 rounded-2xl p-1 relative bg-black shadow-lg">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-3 bg-slate-800 rounded-b-xl z-20"></div>
+                    <div class="w-full h-full border border-white/5 rounded-lg relative overflow-hidden flex flex-col bg-[#0a0a0a]">
+                        <div class="flex-1 w-full flex flex-col gap-1.5 p-2 pt-4">
+                            <div class="flex justify-between items-center mb-1">
+                               <div class="h-2 w-8 bg-white/20 rounded-full"></div>
+                               <div class="h-4 w-4 rounded-full bg-primary/40 animate-pulse"></div>
+                            </div>
+                            <div class="h-[60px] w-full bg-gradient-to-br from-primary/30 to-primary/5 rounded-md mt-1 shadow-[0_0_15px_rgba(84,141,123,0.3)]"></div>
+                            <div class="flex gap-1.5 mt-1 justify-center">
+                               <div class="h-8 w-8 bg-white/5 rounded-full"></div>
+                               <div class="h-8 w-8 bg-white/5 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 4: Sistemas Corporativos y Dashboards -->
+            <div class="process-step relative flex flex-col md:flex-row items-center justify-between group">
+              <!-- Visual Mockup (Dashboard) -->
+              <div class="w-full md:w-5/12 order-1 md:order-1 pl-24 md:pl-0 pr-0 md:pr-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
+                 <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 group-hover:-translate-y-2">
+                  <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all duration-500 group-hover:bg-primary/20"></div>
+                  <!-- Representación de Servidor / Dashboard -->
+                  <div class="h-40 rounded-xl flex flex-col gap-2 relative overflow-hidden">
+                    <div class="flex gap-2 h-12 w-full">
+                       <!-- Mockup de Sidebar -->
+                       <div class="w-1/4 bg-black/60 border border-white/5 rounded-lg flex flex-col px-2 py-3 gap-2">
+                         <div class="h-1.5 w-full bg-white/20 rounded"></div>
+                         <div class="h-1.5 w-2/3 bg-white/10 rounded"></div>
+                         <div class="h-1.5 w-3/4 bg-white/10 rounded"></div>
+                       </div>
+                       <!-- Mockup de Gráfico -->
+                       <div class="w-3/4 bg-black/60 border border-white/5 rounded-lg flex items-end justify-between px-3 pt-4 pb-2 gap-1.5">
+                          <div class="w-full bg-primary/60 rounded-t-sm" style="height: 30%;"></div>
+                          <div class="w-full bg-primary/80 rounded-t-sm" style="height: 50%;"></div>
+                          <div class="w-full bg-primary rounded-t-sm relative shadow-[0_0_10px_rgba(84,141,123,0.5)]" style="height: 100%;"></div>
+                          <div class="w-full bg-primary/70 rounded-t-sm" style="height: 80%;"></div>
+                          <div class="w-full bg-primary/40 rounded-t-sm" style="height: 40%;"></div>
+                       </div>
+                    </div>
+                    <!-- Mockup de Fila de Servidor -->
+                    <div class="flex-1 bg-black/60 border border-white/5 rounded-lg flex flex-col justify-center px-4 relative">
+                       <div class="flex items-center gap-3">
+                          <span class="material-symbols-outlined text-primary text-lg animate-pulse">check_circle</span>
+                          <div class="flex-1">
+                             <div class="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
+                                <div class="h-full w-[85%] bg-primary rounded-full"></div>
+                             </div>
+                          </div>
+                          <span class="text-[10px] text-white/50 font-mono">99.9%</span>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Timeline Icon -->
+              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
+                <span class="material-symbols-outlined text-2xl">monitoring</span>
+              </div>
+              <!-- Text Context -->
+              <div class="w-full md:w-5/12 order-2 md:order-3 text-left pl-24 md:pl-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">4. Gestión & Bases de Datos</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Cerramos el ciclo construyendo ecosistemas. Dashboards corporativos (CRM/ERP), gestión avanzada de inventarios y bases de datos seguras desplegadas en la nube.</p>
+                <div class="flex gap-2 justify-start flex-wrap">
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">AWS / Vercel</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">PostgreSQL</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Dashboards B2B</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+      <!-- ------------------- Sección de Portafolio ------------------ -->
+      <section class="py-24 bg-accent/30 relative" id="portafolio">
+        <div class="max-w-7xl mx-auto px-6 relative z-20">
+          <div class="text-center mb-16">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4 text-white">
+              Trabajo Destacado
+            </h2>
+            <p class="text-slate-500 max-w-xl mx-auto text-lg">
+              Soluciones digitales de alto impacto que transforman negocios complejos en experiencias simples y poderosas.
+            </p>
+          </div>
+
+          <!-- Portafolio: Tarjetas Apiladas Interactivas -->
+          <div class="relative w-full h-[120vh] xl:h-[140vh] mb-0" id="stacked-portfolio-container">
+            <div class="sticky top-[25vh] h-[400px] md:h-[450px] w-full flex items-center justify-center overflow-visible" id="sticky-viewport">
+              <div class="relative w-full max-w-5xl h-full perspective-1000" id="stacked-portfolio-cards">
+                
+                <!-- Tarjeta 1 (Sistema Automotriz) -->
+                <div class="portfolio-card-3d absolute inset-0 w-full glass rounded-3xl border border-white/10 overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] bg-[#0a0f12] z-30 transition-all duration-300 ease-out origin-bottom" data-index="0">
+                  <div class="flex flex-col md:flex-row h-full">
+                    <div class="w-full md:w-1/2 min-h-[250px] md:min-h-full relative overflow-hidden">
+                      <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10"></div>
+                      <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1000" class="absolute w-full h-full object-cover transition-transform duration-700 hover:scale-110" alt="Taller Automotriz">
+                    </div>
+                    <div class="w-full md:w-1/2 p-8 md:p-14 flex flex-col justify-center">
+                      <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">Web App</span>
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">React</span>
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">Java</span>
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">MySQL</span>
+                      </div>
+                      <h3 class="font-display text-3xl font-bold mb-4 text-white">Sistema Automotriz</h3>
+                      <p class="text-slate-400 mb-8 leading-relaxed">Aplicación web completa para un taller mecánico. Incluye registro detallado de vehículos, historial de reparaciones y gestión integral de mecánicos y trabajadores.</p>
+                      <a href="#" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tarjeta 2 (LogiTrack Pro) -->
+                <div class="portfolio-card-3d absolute inset-0 w-full glass rounded-3xl border border-white/10 overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] bg-[#0a0f12] z-20 transition-all duration-300 ease-out origin-bottom" data-index="1">
+                  <div class="flex flex-col md:flex-row h-full">
+                    <div class="w-full md:w-1/2 min-h-[250px] md:min-h-full relative overflow-hidden">
+                       <div class="absolute inset-0 bg-indigo-500/20 mix-blend-overlay z-10"></div>
+                      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000" class="absolute w-full h-full object-cover transition-transform duration-700 hover:scale-110" alt="Dashboard Logistics">
+                    </div>
+                    <div class="w-full md:w-1/2 p-8 md:p-14 flex flex-col justify-center">
+                      <div class="flex gap-2 mb-4">
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">SaaS / BI</span>
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">React</span>
+                      </div>
+                      <h3 class="font-display text-3xl font-bold mb-4 text-white">LogiTrack Pro</h3>
+                      <p class="text-slate-400 mb-8 leading-relaxed">Sistema interno B2B para rastreo de flotas. Sustituimos decenas de hojas de Excel por un panel centralizado e intuitivo ahorrando 20hrs de trabajo semanal.</p>
+                      <a href="#" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tarjeta 3 (FitVexa Health) -->
+                <div class="portfolio-card-3d absolute inset-0 w-full glass rounded-3xl border border-white/10 overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] bg-[#0a0f12] z-10 transition-all duration-300 ease-out origin-bottom" data-index="2">
+                  <div class="flex flex-col md:flex-row h-full">
+                    <div class="w-full md:w-1/2 min-h-[250px] md:min-h-full relative overflow-hidden">
+                      <div class="absolute inset-0 bg-emerald-500/20 mix-blend-overlay z-10"></div>
+                      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" class="absolute w-full h-full object-cover transition-transform duration-700 hover:scale-110" alt="Health App">
+                    </div>
+                    <div class="w-full md:w-1/2 p-8 md:p-14 flex flex-col justify-center">
+                      <div class="flex gap-2 mb-4">
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">App Móvil</span>
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">React Native</span>
+                      </div>
+                      <h3 class="font-display text-3xl font-bold mb-4 text-white">FitVexa Health</h3>
+                      <p class="text-slate-400 mb-8 leading-relaxed">Aplicación iOS y Android para ecosistema de salud. Integra planes nutricionales con rendimiento nativo, hardware watch y modo offline.</p>
+                      <a href="#" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+      <!-- ------------------- Sección del Equipo ------------------ -->
+      <section class="py-24" id="equipo">
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+          >
+            <div>
+              <h2
+                class="font-display text-3xl md:text-4xl font-bold mb-4 text-white"
+              >
+                Nuestro Equipo
+              </h2>
+              <p class="text-slate-500 max-w-xl">
+                Las mentes brillantes detrás de nuestra excelencia técnica.
+              </p>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="group">
+              <div
+                class="relative overflow-hidden rounded-2xl mb-4 bg-white/5 aspect-square"
+              >
+                <img
+                  alt="Alex Rivera"
+                  class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500"
+                  src="src/img/Perfil1.png"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-6"
+                >
+                  <div class="flex gap-4">
+                    <!-- GitHub -->
+                    <a
+                      class="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all"
+                      href="https://github.com/Shiro-Vs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.921.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a
+                      class="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all"
+                      href="https://www.linkedin.com/in/shirovs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                        />
+                      </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a
+                      class="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all"
+                      href="https://www.instagram.com/shiro.vs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                        />
+                      </svg>
+                    </a>
+                    <!-- Website -->
+                    <a
+                      class="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all"
+                      href="https://shirovs.online/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h4 class="font-bold text-lg text-white">Robert Vasquez</h4>
+              <p class="text-sm text-primary font-medium mb-2">Ing. Software</p>
+              <p class="text-xs text-slate-500">
+                Experto en sistemas escalables y arquitectura de nube.
+              </p>
+            </div>
+            <div class="group">
+              <div
+                class="relative overflow-hidden rounded-2xl mb-4 bg-white/5 aspect-square"
+              >
+                <img
+                  alt="Alex Rivera"
+                  class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500"
+                  src="src/img/Perfil2.png"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-6"
+                >
+                  <div class="flex gap-4">
+                    <!-- GitHub -->
+                    <a
+                      class="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all"
+                      href="https://github.com/Shiro-Vs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.921.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        />
+                      </svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a
+                      class="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all"
+                      href="https://www.linkedin.com/in/shirovs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                        />
+                      </svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a
+                      class="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all"
+                      href="https://www.instagram.com/shiro.vs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                        />
+                      </svg>
+                    </a>
+                    <!-- Website -->
+                    <a
+                      class="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-primary transition-all"
+                      href="https://shirovs.online/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        class="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h4 class="font-bold text-lg text-white">José Gonzales</h4>
+              <p class="text-sm text-primary font-medium mb-2">Ing. Sistemas</p>
+              <p class="text-xs text-slate-500">
+                Experto en sistemas escalables y arquitectura de nube.
+              </p>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------- Sección de Contacto ------------------ -->
+      <section class="py-24 relative overflow-hidden" id="contacto">
+        <div
+          class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start"
+        >
+          <div>
+            <h2
+              class="font-display text-4xl md:text-5xl font-bold mb-6 text-white"
+            >
+              ¿Listo para iniciar tu viaje digital?
+            </h2>
+            <p class="text-slate-500 text-lg mb-8">
+              Cuéntanos sobre tu proyecto o simplemente saluda. Respondemos
+              típicamente en menos de 12 horas.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"
+                >
+                  <span class="material-symbols-outlined">email</span>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-500">Escríbenos</p>
+                  <p class="font-bold text-white">vexa.corp@outlook.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-xl"
+          >
+            <form id="contact-form" action="https://formspree.io/f/mgolnlzd" method="POST" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-medium text-slate-500 mb-2"
+                    >Nombre Completo</label
+                  >
+                  <input
+                    class="w-full bg-black/20 border-white/10 rounded-xl focus:ring-primary focus:border-primary px-4 py-3 text-white"
+                    placeholder="Juan Pérez"
+                    type="text"
+                    name="nombre"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-slate-500 mb-2"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    class="w-full bg-black/20 border-white/10 rounded-xl focus:ring-primary focus:border-primary px-4 py-3 text-white"
+                    placeholder="juan@ejemplo.com"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-500 mb-2"
+                  >Tipo de Servicio</label
+                >
+                <select
+                  class="w-full bg-black/20 border-white/10 rounded-xl focus:ring-primary focus:border-primary px-4 py-3 text-white"
+                  name="servicio"
+                >
+                  <option value="Diseño Web">Diseño Web</option>
+                  <option value="Aplicación Móvil">Aplicación Móvil</option>
+                  <option value="Gestión de Inventario">Gestión de Inventario</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-500 mb-2"
+                  >Resumen del Proyecto</label
+                >
+                <textarea
+                  class="w-full bg-black/20 border-white/10 rounded-xl focus:ring-primary focus:border-primary px-4 py-3 text-white"
+                  placeholder="Cuéntanos más sobre lo que quieres construir..."
+                  rows="4"
+                  name="mensaje"
+                  required
+                ></textarea>
+              </div>
+              <button
+                class="w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-opacity-90 transition-all flex items-center justify-center gap-2"
+                type="submit"
+                id="form-submit-btn"
+              >
+                Enviar Solicitud
+                <span class="material-symbols-outlined text-sm">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal de Confirmación -->
+      <div id="success-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-[#111111] border border-white/10 rounded-2xl p-8 max-w-sm w-full mx-4 text-center transform scale-95 transition-transform duration-300" id="modal-content">
+          <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
+            <span class="material-symbols-outlined text-3xl">check_circle</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold mb-2 text-white">¡Mensaje Enviado!</h3>
+          <p class="text-slate-400 mb-8">Gracias por contactarnos. Nos pondremos en contacto contigo lo antes posible.</p>
+          <button id="close-modal-btn" class="w-full py-3 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- ------------------- Pie de Página (Footer) ------------------ -->
+    <footer class="bg-accent pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-2 md:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <div
+                class="h-8 w-8 bg-white rounded-full flex items-center justify-center p-1"
+              >
+                <img
+                  alt="VEXA Logo"
+                  class="h-full w-full object-contain"
+                  src="src/img/LogoVexa.png"
+                />
+              </div>
+              <span
+                class="font-display font-extrabold text-xl tracking-tight text-white"
+                >VEXA</span
+              >
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">
+              Construyendo la próxima generación de productos digitales con
+              precisión y pasión.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"
+                href="#"
+                ><span class="material-symbols-outlined text-lg"
+                  >public</span
+                ></a
+              >
+              <a
+                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"
+                href="#"
+                ><span class="material-symbols-outlined text-lg"
+                  >camera_alt</span
+                ></a
+              >
+              <a
+                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"
+                href="#"
+                ><span class="material-symbols-outlined text-lg"
+                  >alternate_email</span
+                ></a
+              >
+            </div>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6 text-white">Enlaces Rápidos</h5>
+            <ul class="space-y-4 text-sm text-slate-500">
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="#quienes-somos"
+                  >Quiénes Somos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="#servicios"
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="#portafolio"
+                  >Portafolio</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#equipo"
+                  >Equipo</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6 text-white">Servicios</h5>
+            <ul class="space-y-4 text-sm text-slate-500">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Web Apps</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Desarrollo Móvil</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Sistemas CRM</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Consultoría Cloud</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 uppercase tracking-widest"
+        >
+          <p>© 2024 VEXA Software Agency. Todos los derechos reservados.</p>
+          <div class="flex gap-8">
+            <a class="hover:text-primary" href="#">Política de Privacidad</a>
+            <a class="hover:text-primary" href="#">Términos de Servicio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="fixed bottom-8 right-8 z-[100] w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all"
+      href="https://wa.link/5ifr33"
+      target="_blank"
+    >
+      <svg
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 16 16"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+        ></path>
+      </svg>
+    </a>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
