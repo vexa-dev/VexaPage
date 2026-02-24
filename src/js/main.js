@@ -265,4 +265,222 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.dispatchEvent(new Event("scroll"));
   }
+
+  /*------------------- Animación Typed.js ------------------*/
+  if (document.getElementById("typed")) {
+    new Typed("#typed", {
+      strings: ["Innovación", "Evolución", "Resultados", "Tecnología"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 2000,
+      loop: true,
+    });
+  }
+
+  /*------------------- Modal de Detalles de Proyectos (Compacto) ------------------*/
+  const projectDetailsModal = document.getElementById("project-details-modal");
+  const projectModalContent = document.getElementById("project-modal-content");
+  const closeProjectModalBtn = document.getElementById(
+    "close-project-modal-btn",
+  );
+
+  const modalHeroBg = document.getElementById("modal-hero-bg");
+  const modalHeroImg = document.getElementById("modal-hero-img");
+  const modalProjectTitle = document.getElementById("modal-project-title");
+  const modalProjectTags = document.getElementById("modal-project-tags");
+  const modalProjectHighlights = document.getElementById(
+    "modal-project-highlights",
+  );
+  const modalProjectDescMobile = document.getElementById(
+    "modal-project-desc-mobile",
+  );
+  const modalProjectDescDesktop = document.getElementById("modal-project-desc");
+  const modalProjectGallery = document.getElementById("modal-project-gallery");
+
+  const projectsDataCompact = [
+    {
+      title: "Sistema Automotriz",
+      tags: ["Web App", "React", "Java", "MySQL"],
+      highlights: [
+        { icon: "speed", text: "-40% Tiempo administrativo" },
+        { icon: "inventory_2", text: "Control stock en tiempo real" },
+        { icon: "notifications_active", text: "Avisos automáticos a clientes" },
+      ],
+      description:
+        "Digitalización integral de un taller mecánico de alto flujo. Los mecánicos actualizan reparaciones desde sus móviles y los administradores controlan el inventario de repuestos y facturación en tiempo real.",
+      images: [
+        "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=600",
+      ],
+    },
+    {
+      title: "LogiTrack Pro",
+      tags: ["SaaS / BI", "React"],
+      highlights: [
+        { icon: "monitoring", text: "Dashboard Analítico B2B" },
+        { icon: "route", text: "Optimización remota de rutas" },
+        { icon: "savings", text: "Reducción de costos del 15%" },
+      ],
+      description:
+        "Sistema B2B para rastreo de flotas. Sustituimos hojas de Excel por un panel centralizado e intuitivo con integraciones satelitales para control de rutas y consumo de combustible en vivo.",
+      images: [
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1586528116311-ad8ed7c824eb?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=600",
+      ],
+    },
+    {
+      title: "FitVexa Health",
+      tags: ["App Móvil", "React Native"],
+      highlights: [
+        { icon: "health_and_safety", text: "Ecosistema integral salud" },
+        { icon: "watch", text: "Sincronización con Wearables" },
+        { icon: "offline_bolt", text: "Modo Offline nativo" },
+      ],
+      description:
+        "App nativa iOS/Android. Planes nutricionales y de ejercicio con rendimiento fluido a 60fps, notificaciones inteligentes y persistencia de datos offline sincronizados con relojes Apple y Garmin.",
+      images: [
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600",
+        "https://images.unsplash.com/photo-1526506114642-90924089c2ce?auto=format&fit=crop&q=80&w=600",
+      ],
+    },
+  ];
+
+  window.openProjectModal = function (index) {
+    const data = projectsDataCompact[index];
+    if (!data || !projectDetailsModal) return;
+
+    modalProjectTitle.textContent = data.title;
+
+    if (modalHeroBg && modalHeroImg) {
+      modalHeroBg.style.backgroundImage = `url(${data.images[0]})`;
+      modalHeroImg.src = data.images[0];
+    }
+
+    if (modalProjectTags) {
+      modalProjectTags.innerHTML = data.tags
+        .map(
+          (tag) =>
+            `<span class="px-2 py-1 bg-white/10 border border-white/20 text-white text-[10px] font-bold rounded-full uppercase tracking-widest backdrop-blur-md">${tag}</span>`,
+        )
+        .join("");
+    }
+
+    if (modalProjectDescDesktop) {
+      modalProjectDescDesktop.textContent = data.description;
+    }
+    if (modalProjectDescMobile) {
+      modalProjectDescMobile.textContent = data.description;
+    }
+
+    if (modalProjectHighlights) {
+      modalProjectHighlights.innerHTML = data.highlights
+        .map(
+          (hl) =>
+            `<div class="border border-white/5 rounded-lg p-2.5 flex flex-col items-center justify-center text-center gap-1.5 bg-white/5">
+              <span class="material-symbols-outlined text-primary text-3xl">${hl.icon}</span>
+              <span class="text-white font-bold text-[11px] leading-tight mt-1">${hl.text}</span>
+            </div>`,
+        )
+        .join("");
+    }
+
+    if (modalProjectGallery) {
+      currentGalleryImages = data.images;
+      currentGalleryIndex = 0;
+      updateGallery();
+      resetGalleryInterval();
+    }
+
+    projectDetailsModal.classList.remove("opacity-0", "pointer-events-none");
+    projectModalContent.classList.remove("scale-95");
+    projectModalContent.classList.add("scale-100");
+    document.body.style.overflow = "hidden";
+  };
+
+  window.closeProjectModal = function () {
+    if (!projectDetailsModal) return;
+    projectDetailsModal.classList.add("opacity-0", "pointer-events-none");
+    projectModalContent.classList.remove("scale-100");
+    projectModalContent.classList.add("scale-95");
+    document.body.style.overflow = "";
+    clearInterval(galleryInterval);
+  };
+
+  /*------------------- Lógica de Galería (Carrusel) ------------------*/
+  let currentGalleryImages = [];
+  let currentGalleryIndex = 0;
+  let galleryInterval = null;
+
+  function updateGallery() {
+    if (!modalProjectGallery || currentGalleryImages.length === 0) return;
+
+    modalProjectGallery.innerHTML = `<img src="${currentGalleryImages[currentGalleryIndex]}" alt="Vista" class="absolute inset-0 w-full h-full object-cover animate-fadeIn">
+      <div class="absolute inset-0 bg-primary/10 mix-blend-overlay opacity-0 hover:opacity-100 transition-opacity duration-500"></div>`;
+
+    const dotsContainer = document.getElementById("gallery-dots");
+    if (dotsContainer) {
+      dotsContainer.innerHTML = currentGalleryImages
+        .map(
+          (_, i) =>
+            `<button class="w-2 h-2 rounded-full transition-colors ${i === currentGalleryIndex ? "bg-primary" : "bg-white/20"}" onclick="setGalleryIndex(${i})"></button>`,
+        )
+        .join("");
+    }
+  }
+
+  window.setGalleryIndex = function (i) {
+    currentGalleryIndex = i;
+    updateGallery();
+    resetGalleryInterval();
+  };
+
+  function nextGallery() {
+    if (currentGalleryImages.length === 0) return;
+    currentGalleryIndex =
+      (currentGalleryIndex + 1) % currentGalleryImages.length;
+    updateGallery();
+  }
+
+  function prevGallery() {
+    if (currentGalleryImages.length === 0) return;
+    currentGalleryIndex =
+      (currentGalleryIndex - 1 + currentGalleryImages.length) %
+      currentGalleryImages.length;
+    updateGallery();
+  }
+
+  function resetGalleryInterval() {
+    clearInterval(galleryInterval);
+    if (currentGalleryImages.length > 1) {
+      galleryInterval = setInterval(nextGallery, 3000);
+    }
+  }
+
+  const galleryNextBtn = document.getElementById("gallery-next");
+  const galleryPrevBtn = document.getElementById("gallery-prev");
+  if (galleryNextBtn) {
+    galleryNextBtn.addEventListener("click", () => {
+      nextGallery();
+      resetGalleryInterval();
+    });
+  }
+  if (galleryPrevBtn) {
+    galleryPrevBtn.addEventListener("click", () => {
+      prevGallery();
+      resetGalleryInterval();
+    });
+  }
+
+  if (closeProjectModalBtn) {
+    closeProjectModalBtn.addEventListener("click", window.closeProjectModal);
+  }
+
+  if (projectDetailsModal) {
+    projectDetailsModal.addEventListener("click", function (e) {
+      if (e.target === projectDetailsModal) window.closeProjectModal();
+    });
+  }
 });

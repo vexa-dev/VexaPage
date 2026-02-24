@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth scroll-pt-20" lang="es">
+<html class="scroll-smooth scroll-pt-16" lang="es">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -18,12 +18,13 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
     <script src="src/js/tailwind.config.js"></script>
     <link href="src/css/styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body class="bg-background-dark text-slate-100 font-sans antialiased">
     <!-- ------------------- Header / Navegación ------------------ -->
     <header class="fixed top-0 w-full z-50 glass border-b border-white/5">
       <nav
-        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
       >
         <div class="flex items-center gap-3">
           <div
@@ -114,7 +115,7 @@
           <h1
             class="font-display text-3xl md:text-5xl font-extrabold mb-6 leading-tight max-w-4xl mx-auto text-white"
           >
-            VEXA: <span class="text-primary">Innovación</span> en Software a tu
+            VEXA: <span id="typed" class="text-primary"></span><br> en Software a tu
             Medida
           </h1>
           <p
@@ -154,24 +155,28 @@
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtsRuASG83vK1S37fZ8snixF3i32qrI4jujSe4jCAEeY51Y54w9Xq3_soF6Y1svDyrdz8f6lMkK1tCoe04dsKXJe8RLBUmVdpVBFAC7DzERGIOG-wm15Fo897KfmvihOAfyG5efumX6JwP9H7ZKyLu1hzEuq4A9C9svGHTNxHHFiaK9hfaSl-zYrSKUMtlgdy-1eM6LyTUQbKQZHw-pUWa_vLWnEzcMrisQ7JfaN3IdHfBedrQdrN51gFPpVc7oXTKU3fMKSbkM8ER"
               />
               <div
-                class="absolute -bottom-6 -right-6 glass p-6 rounded-2xl hidden md:block z-20"
+                class="absolute -bottom-6 -right-6 bg-[#3E6B5D] p-6 rounded-2xl hidden md:flex flex-col items-center justify-center z-20 overflow-hidden shadow-[0_0_20px_rgba(84,141,123,0.3)] border border-white/10"
               >
-                <div class="text-3xl font-bold text-primary">50+</div>
-                <div class="text-sm text-slate-400">Proyectos Exitosos</div>
+                <!-- Efecto de brillo -->
+                <div class="absolute top-0 -left-[50%] h-full w-[50%] animate-shimmer bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-[30deg]"></div>
+                <div class="flex items-center gap-2 relative z-10 mb-1">
+                  <span class="material-symbols-outlined text-white text-3xl">support_agent</span>
+                  <div class="text-3xl font-bold text-white">24/7</div>
+                </div>
+                <div class="text-sm font-medium text-white/90 relative z-10">Soporte Técnico</div>
               </div>
             </div>
             <div>
               <h2
                 class="font-display text-3xl md:text-4xl font-bold mb-6 text-white"
               >
-                Quiénes Somos: Transformando Complejidad en Claridad
+                Quiénes Somos: Talento Joven, Soluciones Robustas
               </h2>
               <p class="text-slate-400 text-lg mb-8 leading-relaxed">
-                En VEXA, no solo escribimos código; resolvemos problemas de
-                negocio. Nuestra agencia nació bajo el principio de que el
-                software premium debe ser accesible, escalable e intuitivo. Nos
-                apasiona construir soluciones digitales que no solo funcionen,
-                sino que superen las expectativas.
+                En VEXA, somos un equipo de ingenieros en formación apasionados por la arquitectura de software. 
+                No solo creamos aplicaciones; diseñamos sistemas escalables utilizando las herramientas que están 
+                definiendo el mercado actual. Creemos que la juventud es sinónimo de innovación sin límites y 
+                adaptabilidad total.
               </p>
               <div class="space-y-4">
                 <div class="flex gap-4">
@@ -213,14 +218,11 @@
       <section class="py-24 relative overflow-hidden" id="servicios">
         <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-20 relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
-              Nuestra Metodología
-            </div>
             <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Diseño, desarrollo y escala:<br> <span class="text-primary">El Viaje del Código</span>
+              Nuestros<br> <span class="text-primary">Servicios Estrella</span>
             </h2>
             <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              No solo hacemos software; construimos ecosistemas digitales. Así es como el equipo de VEXA transforma tu visión en una realidad escalable y de alto rendimiento.
+              Descubre cómo podemos potenciar tu negocio a través de nuestras soluciones tecnológicas a medida, diseñadas para escalar y optimizar tus recursos.
             </p>
           </div>
           
@@ -230,35 +232,90 @@
             <!-- Línea de Progreso Animada -->
             <div id="process-progress" class="absolute left-8 md:left-1/2 top-0 w-1 bg-primary -translate-x-1/2 rounded-full hidden md:block transition-all duration-[1s] ease-out h-0 shadow-[0_0_15px_rgba(84,141,123,0.6)]"></div>
 
-            <!-- Paso 1: Diseño -->
+            <!-- Paso 1: Consultoría en Transformación Digital -->
             <div class="process-step relative flex flex-col md:flex-row items-center justify-between mb-24 group">
-              <div class="w-full md:w-5/12 order-2 md:order-1 text-left md:text-right pl-24 md:pl-0 pr-0 md:pr-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
-                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">1. Análisis y Diseño UX/UI</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">Arquitecturizamos la experiencia del usuario antes de escribir una línea de código. Wireframes interactivos y prototipos de alta fidelidad que garantizan la máxima conversión.</p>
-                <div class="flex gap-2 justify-start md:justify-end flex-wrap">
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Design Systems</span>
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Prototipado</span>
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Figma</span>
+              <div class="w-full md:w-5/12 order-1 md:order-1 pl-24 md:pl-0 pr-0 md:pr-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
+                <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 flex justify-center group-hover:-translate-y-2">
+                  <div class="absolute bottom-0 left-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -ml-16 -mb-16 transition-all duration-500 group-hover:bg-primary/20"></div>
+                   <!-- Representación de Consultoría -->
+                  <div class="h-40 bg-black/40 rounded-xl border border-white/5 flex flex-col p-4 gap-3 overflow-hidden group-hover:border-primary/20 transition-colors w-full">
+                     <div class="flex gap-3 h-full">
+                        <div class="flex-1 bg-white/5 rounded-lg border border-white/5 flex flex-col items-center justify-center gap-2 relative overflow-hidden">
+                           <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center animate-pulse">
+                             <span class="material-symbols-outlined text-primary text-sm">search</span>
+                           </div>
+                           <div class="w-1/2 h-1.5 bg-white/20 rounded-full"></div>
+                        </div>
+                        <div class="flex-1 flex flex-col gap-2">
+                           <div class="flex-1 bg-primary/20 rounded-lg border border-primary/30 flex items-center justify-center">
+                              <span class="material-symbols-outlined text-primary text-lg">trending_up</span>
+                           </div>
+                           <div class="flex-1 bg-white/5 rounded-lg border border-white/5 flex items-center justify-center">
+                              <span class="material-symbols-outlined text-white/30 text-lg">lightbulb</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                 </div>
               </div>
               <!-- Timeline Icon -->
               <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
-                <span class="material-symbols-outlined text-2xl">design_services</span>
+                <span class="material-symbols-outlined text-2xl">lightbulb</span>
+              </div>
+              <div class="w-full md:w-5/12 order-2 md:order-3 text-left pl-24 md:pl-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
+                <div class="w-full flex justify-center mb-4">
+                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold uppercase tracking-widest animate-pulse-glow">
+                    <span class="material-symbols-outlined text-sm">sell</span> Gratuito para cualquier servicio
+                  </div>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">1. Consultoría en Transformación Digital</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Te ayudamos a entender qué software necesitas para hacer crecer tu negocio. Te guiamos en el proceso estratégico para asegurar que la tecnología sea una inversión rentable y no un gasto.</p>
+                <div class="flex gap-2 justify-start flex-wrap">
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Estrategia</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Análisis</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Innovación</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 2: Diseño -->
+            <div class="process-step relative flex flex-col md:flex-row items-center justify-between mb-24 group">
+              <div class="w-full md:w-5/12 order-2 md:order-1 text-left md:text-right pl-24 md:pl-0 pr-0 md:pr-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">2. Desarrollo de Páginas Web</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Creamos experiencias digitales atractivas y funcionales con la mejor tecnología. Landing pages, portafolios interactivos y sitios corporativos optimizados para una máxima conversión.</p>
+                <div class="flex gap-2 justify-start md:justify-end flex-wrap">
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Next.js</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">React</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Tailwind CSS</span>
+                </div>
+              </div>
+              <!-- Timeline Icon -->
+              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
+                <span class="material-symbols-outlined text-2xl">web</span>
               </div>
               <div class="w-full md:w-5/12 order-1 md:order-3 pl-24 md:pl-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
                 <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 group-hover:-translate-y-2">
                   <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all duration-500 group-hover:bg-primary/20"></div>
-              <!-- Gráfico de Wireframe -->
-                  <div class="h-40 bg-black/40 rounded-xl border border-white/5 flex items-center justify-center relative overflow-hidden p-4 group-hover:border-primary/20 transition-colors">
-                     <div class="w-full h-full border border-dashed border-primary/30 rounded-lg flex flex-col p-3 gap-2 relative">
-                        <div class="flex gap-2 w-full">
-                          <div class="w-8 h-8 rounded-full bg-white/10 animate-pulse"></div>
-                          <div class="flex-1 flex flex-col gap-1 justify-center">
+                  <!-- Representación de Web App -->
+                  <div class="h-40 bg-black/40 rounded-xl border border-white/5 flex flex-col overflow-hidden group-hover:border-primary/20 transition-colors">
+                     <div class="flex gap-1.5 p-3 border-b border-white/5 bg-white/5">
+                        <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+                     </div>
+                     <div class="w-full flex-1 flex flex-col p-3 gap-3 relative">
+                        <div class="flex gap-3 w-full items-center">
+                          <div class="w-8 h-8 rounded-full bg-primary/40 animate-pulse"></div>
+                          <div class="flex-1 flex flex-col gap-1.5">
                             <div class="w-full h-2 rounded-full bg-white/10"></div>
                             <div class="w-2/3 h-2 rounded-full bg-white/5"></div>
                           </div>
                         </div>
-                        <div class="w-full h-full mt-2 rounded-md bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center text-primary/50 text-xs">Wireframe</div>
+                        <div class="flex gap-2 h-full">
+                           <div class="flex-1 h-full rounded-md bg-white/10 border border-white/5"></div>
+                           <div class="flex-1 h-full rounded-md bg-white/10 border border-white/5"></div>
+                           <div class="flex-1 h-full rounded-md bg-white/10 border border-white/5"></div>
+                        </div>
                      </div>
                   </div>
                 </div>
@@ -268,57 +325,8 @@
             <!-- Paso 2: Desarrollo Web -->
             <div class="process-step relative flex flex-col md:flex-row items-center justify-between mb-24 group">
               <div class="w-full md:w-5/12 order-1 md:order-1 pl-24 md:pl-0 pr-0 md:pr-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
-                 <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 group-hover:-translate-y-2 flex flex-col justify-end">
-                  <div class="absolute bottom-0 left-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -ml-16 -mb-16 transition-all duration-500 group-hover:bg-primary/20"></div>
-                  <!-- Representación de Código -->
-                  <div class="h-40 bg-[#0d1117]/80 rounded-xl border border-white/5 p-4 font-mono text-xs text-left relative overflow-hidden shadow-inner group-hover:border-primary/20 transition-colors">
-                    <div class="flex gap-1.5 mb-3">
-                      <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
-                      <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
-                      <div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
-                    </div>
-                    <div class="text-slate-400 mb-1"><span class="text-purple-400">import</span> { VexaCore } <span class="text-purple-400">from</span> <span class="text-green-300">'@vexa/core'</span>;</div>
-                    <div class="text-slate-300 mb-1"><span class="text-purple-400">const</span> <span class="text-blue-400">app</span> = <span class=\"text-purple-400\">new</span> <span class="text-yellow-200">VexaCore</span>();</div>
-                    <div class="text-slate-300">app.<span class="text-yellow-200">deploy</span>({</div>
-                    <div class="text-slate-300 pl-4">performance: <span class="text-green-300">'maximum'</span>,</div>
-                    <div class="text-slate-300 pl-4">scale: <span class="text-orange-300">true</span></div>
-                    <div class="text-slate-300">});<span class="animate-pulse text-primary inline-block w-2 bg-primary h-3 ml-1 translate-y-0.5"></span></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Timeline Icon -->
-              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
-                <span class="material-symbols-outlined text-2xl">code_blocks</span>
-              </div>
-              <div class="w-full md:w-5/12 order-2 md:order-3 text-left pl-24 md:pl-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
-                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">2. Desarrollo Web & Apps</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">Construimos el núcleo de tu producto web. Desarrollamos web apps ultrarrápidas, landing pages interactivas y e-commerce con código limpio y optimizado.</p>
-                <div class="flex gap-2 justify-start flex-wrap">
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Next.js</span>
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Tailwind CSS</span>
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">React</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Paso 3: Apps Móviles -->
-            <div class="process-step relative flex flex-col md:flex-row items-center justify-between mb-24 group">
-              <div class="w-full md:w-5/12 order-2 md:order-1 text-left md:text-right pl-24 md:pl-0 pr-0 md:pr-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
-                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">3. Apps Móviles Nativas</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">Llevamos tu modelo de negocio directo al bolsillo de tus clientes. Apps para iOS y Android con rendimiento nativo, animaciones fluidas y notificaciones push.</p>
-                <div class="flex gap-2 justify-start md:justify-end flex-wrap">
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">React Native</span>
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Flutter</span>
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Firebase</span>
-                </div>
-              </div>
-              <!-- Timeline Icon -->
-              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
-                <span class="material-symbols-outlined text-2xl">smartphone</span>
-              </div>
-              <div class="w-full md:w-5/12 order-1 md:order-3 pl-24 md:pl-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
                 <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 flex justify-center group-hover:-translate-y-2">
-                  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-primary/10 rounded-full blur-3xl transition-all duration-500 group-hover:bg-primary/20"></div>
+                  <div class="absolute bottom-0 left-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -ml-16 -mb-16 transition-all duration-500 group-hover:bg-primary/20"></div>
                    <!-- Representación de Teléfono Móvil -->
                   <div class="w-20 h-40 border-[5px] border-slate-800 rounded-2xl p-1 relative bg-black shadow-lg">
                     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-3 bg-slate-800 rounded-b-xl z-20"></div>
@@ -338,59 +346,112 @@
                   </div>
                 </div>
               </div>
+              <!-- Timeline Icon -->
+              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
+                <span class="material-symbols-outlined text-2xl">smartphone</span>
+              </div>
+              <div class="w-full md:w-5/12 order-2 md:order-3 text-left pl-24 md:pl-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">3. Desarrollo de Apps Móviles</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Llevamos tu modelo de negocio directo al bolsillo de tus clientes. Aplicaciones nativas e híbridas para iOS y Android con rendimiento superior y animaciones fluidas.</p>
+                <div class="flex gap-2 justify-start flex-wrap">
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">React Native</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Swift / Kotlin</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Firebase</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 3: Apps Móviles -->
+            <div class="process-step relative flex flex-col md:flex-row items-center justify-between mb-24 group">
+              <div class="w-full md:w-5/12 order-2 md:order-1 text-left md:text-right pl-24 md:pl-0 pr-0 md:pr-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">4. Sistema de Gestión de Inventario</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Optimiza el control de tus productos y recursos. Desarrollamos plataformas robustas y personalizadas que te brindan una visibilidad completa de tu stock y transacciones en tiempo real.</p>
+                <div class="flex gap-2 justify-start md:justify-end flex-wrap">
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Java</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">React</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">REST APIs</span>
+                </div>
+              </div>
+              <!-- Timeline Icon -->
+              <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
+                <span class="material-symbols-outlined text-2xl">inventory</span>
+              </div>
+              <div class="w-full md:w-5/12 order-1 md:order-3 pl-24 md:pl-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
+                <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 group-hover:-translate-y-2">
+                  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-primary/10 rounded-full blur-3xl transition-all duration-500 group-hover:bg-primary/20"></div>
+                   <!-- Representación de Inventario (Tabla) -->
+                  <div class="h-40 bg-black/40 rounded-xl border border-white/5 flex flex-col p-3 gap-2 overflow-hidden group-hover:border-primary/20 transition-colors">
+                     <div class="flex justify-between items-center bg-white/5 p-2 rounded-t-lg">
+                        <div class="w-16 h-2 bg-white/20 rounded"></div>
+                        <div class="w-8 h-2 bg-primary/40 rounded animate-pulse"></div>
+                     </div>
+                     <div class="flex flex-col gap-1.5 flex-1">
+                        <div class="flex gap-2 items-center bg-white/5 p-2 rounded border border-white/5">
+                           <div class="w-4 h-4 rounded bg-primary/30 flex-shrink-0"></div>
+                           <div class="flex-1 h-1.5 bg-white/20 rounded"></div>
+                           <div class="w-8 h-1.5 bg-white/30 rounded"></div>
+                        </div>
+                        <div class="flex gap-2 items-center bg-white/5 p-2 rounded border border-white/5">
+                           <div class="w-4 h-4 rounded bg-white/10 flex-shrink-0"></div>
+                           <div class="flex-1 h-1.5 bg-white/10 rounded"></div>
+                           <div class="w-8 h-1.5 bg-white/20 rounded"></div>
+                        </div>
+                        <div class="flex gap-2 items-center bg-white/5 p-2 rounded border border-white/5">
+                           <div class="w-4 h-4 rounded bg-white/10 flex-shrink-0"></div>
+                           <div class="flex-1 h-1.5 bg-white/10 rounded"></div>
+                           <div class="w-8 h-1.5 bg-white/20 rounded"></div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- Paso 4: Sistemas Corporativos y Dashboards -->
             <div class="process-step relative flex flex-col md:flex-row items-center justify-between group">
               <!-- Visual Mockup (Dashboard) -->
               <div class="w-full md:w-5/12 order-1 md:order-1 pl-24 md:pl-0 pr-0 md:pr-12 opacity-0 translate-y-8 transition-all duration-[800ms] delay-[200ms] ease-out">
-                 <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 group-hover:-translate-y-2">
+                <div class="glass p-6 rounded-2xl border border-white/10 relative overflow-hidden group-hover:border-primary/40 transition-all duration-500 group-hover:-translate-y-2">
                   <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all duration-500 group-hover:bg-primary/20"></div>
-                  <!-- Representación de Servidor / Dashboard -->
+                  <!-- Representación de Personal (Perfiles) -->
                   <div class="h-40 rounded-xl flex flex-col gap-2 relative overflow-hidden">
-                    <div class="flex gap-2 h-12 w-full">
-                       <!-- Mockup de Sidebar -->
-                       <div class="w-1/4 bg-black/60 border border-white/5 rounded-lg flex flex-col px-2 py-3 gap-2">
-                         <div class="h-1.5 w-full bg-white/20 rounded"></div>
-                         <div class="h-1.5 w-2/3 bg-white/10 rounded"></div>
-                         <div class="h-1.5 w-3/4 bg-white/10 rounded"></div>
-                       </div>
-                       <!-- Mockup de Gráfico -->
-                       <div class="w-3/4 bg-black/60 border border-white/5 rounded-lg flex items-end justify-between px-3 pt-4 pb-2 gap-1.5">
-                          <div class="w-full bg-primary/60 rounded-t-sm" style="height: 30%;"></div>
-                          <div class="w-full bg-primary/80 rounded-t-sm" style="height: 50%;"></div>
-                          <div class="w-full bg-primary rounded-t-sm relative shadow-[0_0_10px_rgba(84,141,123,0.5)]" style="height: 100%;"></div>
-                          <div class="w-full bg-primary/70 rounded-t-sm" style="height: 80%;"></div>
-                          <div class="w-full bg-primary/40 rounded-t-sm" style="height: 40%;"></div>
-                       </div>
-                    </div>
-                    <!-- Mockup de Fila de Servidor -->
-                    <div class="flex-1 bg-black/60 border border-white/5 rounded-lg flex flex-col justify-center px-4 relative">
-                       <div class="flex items-center gap-3">
-                          <span class="material-symbols-outlined text-primary text-lg animate-pulse">check_circle</span>
-                          <div class="flex-1">
-                             <div class="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
-                                <div class="h-full w-[85%] bg-primary rounded-full"></div>
-                             </div>
-                          </div>
-                          <span class="text-[10px] text-white/50 font-mono">99.9%</span>
-                       </div>
-                    </div>
+                     <div class="grid grid-cols-2 gap-3 h-full">
+                        <!-- Perfil 1 -->
+                        <div class="bg-black/60 border border-white/5 rounded-lg flex flex-col items-center justify-center p-3 gap-3 hover:border-primary/30 transition-colors">
+                           <div class="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary/40 flex items-center justify-center animate-pulse">
+                              <span class="material-symbols-outlined text-primary text-xl flex-shrink-0">person</span>
+                           </div>
+                           <div class="w-full flex flex-col items-center gap-1.5">
+                              <div class="w-full h-1.5 bg-white/20 rounded-full"></div>
+                              <div class="w-2/3 h-1.5 bg-white/10 rounded-full"></div>
+                           </div>
+                        </div>
+                        <!-- Perfil 2 -->
+                        <div class="bg-black/40 border border-white/5 rounded-lg flex flex-col items-center justify-center p-3 gap-3">
+                           <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center">
+                              <span class="material-symbols-outlined text-white/30 text-xl flex-shrink-0">person</span>
+                           </div>
+                           <div class="w-full flex flex-col items-center gap-1.5">
+                              <div class="w-full h-1.5 bg-white/10 rounded-full"></div>
+                              <div class="w-2/3 h-1.5 bg-white/5 rounded-full"></div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                 </div>
               </div>
               <!-- Timeline Icon -->
               <div class="absolute left-8 md:left-1/2 -translate-x-1/2 top-0 md:top-auto w-16 h-16 rounded-full glass border-4 border-[#0a0a0a] z-10 flex items-center justify-center text-slate-500 group-hover:text-primary group-hover:border-primary/30 group-hover:scale-110 transition-all duration-500 process-icon shadow-[0_0_0px_rgba(84,141,123,0)] group-hover:shadow-[0_0_20px_rgba(84,141,123,0.4)]">
-                <span class="material-symbols-outlined text-2xl">monitoring</span>
+                <span class="material-symbols-outlined text-2xl">groups</span>
               </div>
               <!-- Text Context -->
               <div class="w-full md:w-5/12 order-2 md:order-3 text-left pl-24 md:pl-12 mt-6 md:mt-0 opacity-0 translate-y-8 transition-all duration-[800ms] delay-100 ease-out">
-                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">4. Gestión & Bases de Datos</h3>
-                <p class="text-slate-400 leading-relaxed mb-6">Cerramos el ciclo construyendo ecosistemas. Dashboards corporativos (CRM/ERP), gestión avanzada de inventarios y bases de datos seguras desplegadas en la nube.</p>
+                <h3 class="font-display text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">5. Sistema de Gestión de Personal</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">Automatiza y centraliza la administración de tus equipos. Soluciones eficientes para control de asistencias, planillas, perfiles profesionales y evaluación de métricas corporativas.</p>
                 <div class="flex gap-2 justify-start flex-wrap">
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">AWS / Vercel</span>
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">PostgreSQL</span>
-                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Dashboards B2B</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">Dashboards</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">SpringBoot</span>
+                  <span class="px-3 py-1 bg-white/5 rounded-full text-xs text-slate-300 font-medium border border-white/10 hover:border-primary/50 transition-colors">MySQL</span>
                 </div>
               </div>
             </div>
@@ -433,7 +494,7 @@
                       </div>
                       <h3 class="font-display text-3xl font-bold mb-4 text-white">Sistema Automotriz</h3>
                       <p class="text-slate-400 mb-8 leading-relaxed">Aplicación web completa para un taller mecánico. Incluye registro detallado de vehículos, historial de reparaciones y gestión integral de mecánicos y trabajadores.</p>
-                      <a href="#" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                      <button onclick="openProjectModal(0)" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
                     </div>
                   </div>
                 </div>
@@ -452,7 +513,7 @@
                       </div>
                       <h3 class="font-display text-3xl font-bold mb-4 text-white">LogiTrack Pro</h3>
                       <p class="text-slate-400 mb-8 leading-relaxed">Sistema interno B2B para rastreo de flotas. Sustituimos decenas de hojas de Excel por un panel centralizado e intuitivo ahorrando 20hrs de trabajo semanal.</p>
-                      <a href="#" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                      <button onclick="openProjectModal(1)" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
                     </div>
                   </div>
                 </div>
@@ -471,7 +532,7 @@
                       </div>
                       <h3 class="font-display text-3xl font-bold mb-4 text-white">FitVexa Health</h3>
                       <p class="text-slate-400 mb-8 leading-relaxed">Aplicación iOS y Android para ecosistema de salud. Integra planes nutricionales con rendimiento nativo, hardware watch y modo offline.</p>
-                      <a href="#" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                      <button onclick="openProjectModal(2)" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
                     </div>
                   </div>
                 </div>
@@ -877,7 +938,7 @@
       </div>
     </footer>
     <a
-      class="fixed bottom-8 right-8 z-[100] w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group"
+      class="fixed bottom-8 right-8 z-[100] w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(37,211,102,0.5)] hover:shadow-[0_0_30px_rgba(37,211,102,0.8)] animate-pulse-glow-lg hover:scale-125 active:scale-95 transition-all group"
       href="https://wa.link/5ifr33"
       target="_blank"
     >
@@ -899,6 +960,66 @@
         ></path>
       </svg>
     </a>
+    </a>
+
+    <!-- Modal de Detalles de Proyecto -->
+    <div id="project-details-modal" class="fixed inset-0 z-[200] bg-black/80 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-sm p-4">
+      <div id="project-modal-content" class="w-full max-w-5xl max-h-[90vh] bg-[#0a0f12] rounded-2xl flex flex-col sm:flex-row relative scale-95 transition-transform duration-300 ring-1 ring-white/5 shadow-[0_0_40px_rgba(84,141,123,0.2)] overflow-hidden h-full sm:h-[650px]">
+        
+        <!-- Botón de Cerrar Flotante -->
+        <button id="close-project-modal-btn" class="absolute top-4 right-4 z-50 w-10 h-10 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-colors border border-white/10">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <!-- Lado Izquierdo: Hero y Header (50% ancho en desktop) -->
+        <div class="w-full sm:w-1/2 h-44 sm:h-full relative overflow-hidden flex flex-col justify-end">
+          <!-- Blur Background -->
+          <div id="modal-hero-bg" class="absolute inset-0 bg-cover bg-center blur-2xl scale-110 opacity-60"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f12] via-[#0a0f12]/40 to-transparent"></div>
+          <img id="modal-hero-img" src="" alt="Project Hero" class="absolute inset-0 w-full h-full object-cover z-0 mix-blend-overlay opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-r from-[#0a0f12]/80 via-transparent to-transparent z-10"></div>
+          
+          <div class="relative z-20 p-6 sm:p-10 w-full">
+             <div id="modal-project-tags" class="flex flex-wrap gap-2 mb-3"></div>
+             <h3 id="modal-project-title" class="font-display text-3xl sm:text-5xl font-bold text-white mb-2 drop-shadow-xl leading-tight">Project Title</h3>
+             <p id="modal-project-desc" class="text-slate-300 text-sm sm:text-base leading-relaxed hidden sm:block mt-4 drop-shadow-md">Descripción corta del proyecto irá aquí para dar contexto directo en la imagen.</p>
+          </div>
+        </div>
+
+        <!-- Lado Derecho: Contenido, Highlights, Galería y Botón -->
+        <div class="w-full sm:w-1/2 flex flex-col p-5 sm:p-8 bg-[#0a0f12] overflow-y-auto sm:overflow-hidden h-[calc(100%-11rem)] sm:h-full justify-between">
+          
+          <div class="flex-1 flex flex-col justify-start min-h-0 py-2 sm:mt-2">
+            <!-- Highlights (Puntos Importantes) -->
+            <div class="w-full mb-4">
+              <h4 class="text-white/60 font-display text-[10px] uppercase tracking-widest mb-2">Resultados Clave</h4>
+              <div id="modal-project-highlights" class="grid grid-cols-3 gap-2 w-full">
+              </div>
+            </div>
+            
+            <p id="modal-project-desc-mobile" class="text-slate-400 text-sm leading-relaxed mb-4 block sm:hidden">Descripción corta del proyecto irá aquí para dar contexto directo.</p>
+
+            <!-- Collage / Galería de Detalles -->
+            <div class="w-full mb-2 flex-1 flex flex-col min-h-0">
+               <h4 class="text-white/60 font-display text-[10px] uppercase tracking-widest mb-2">Vistas</h4>
+               <div id="modal-project-gallery" class="relative w-full flex-1 aspect-video sm:aspect-auto rounded-xl overflow-hidden border border-white/10 group shadow-lg bg-black/50">
+               </div>
+               <div class="flex justify-center items-center gap-3 mt-3" id="modal-gallery-controls">
+                  <button id="gallery-prev" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary transition-colors border border-white/10"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
+                  <div id="gallery-dots" class="flex gap-1.5 items-center"></div>
+                  <button id="gallery-next" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary transition-colors border border-white/10"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
+               </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <a href="#contacto" onclick="window.closeProjectModal()" class="w-full flex-shrink-0 flex items-center justify-center gap-2 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-[0_0_15px_rgba(84,141,123,0.3)] hover:-translate-y-0.5 text-sm uppercase tracking-wide mt-2">
+            Solicitar Proyecto Similar <span class="material-symbols-outlined text-lg">rocket_launch</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <script src="src/js/main.js"></script>
   </body>
 </html>
