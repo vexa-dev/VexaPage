@@ -483,4 +483,35 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.target === projectDetailsModal) window.closeProjectModal();
     });
   }
+
+  /*------------------- Auto-scroll Carrusel de Proyectos ------------------*/
+  const portfolioCarousel = document.getElementById("portfolio-carousel");
+  if (portfolioCarousel) {
+    let scrollSpeed = 1; // Velocidad de desplazamiento
+    let isPaused = false;
+    let scrollDirection = 1;
+
+    function autoScrollPortfolio() {
+      if (!isPaused) {
+        portfolioCarousel.scrollLeft += scrollSpeed * scrollDirection;
+        // Cambiar dirección al llegar a los bordes
+        if (portfolioCarousel.scrollLeft >= (portfolioCarousel.scrollWidth - portfolioCarousel.clientWidth - 1)) {
+          scrollDirection = -1;
+        } else if (portfolioCarousel.scrollLeft <= 0) {
+          scrollDirection = 1;
+        }
+      }
+      requestAnimationFrame(autoScrollPortfolio);
+    }
+    
+    // Pausar al pasar el ratón (hover)
+    portfolioCarousel.addEventListener('mouseenter', () => isPaused = true);
+    portfolioCarousel.addEventListener('mouseleave', () => isPaused = false);
+    
+    // Pausar en pantallas táctiles
+    portfolioCarousel.addEventListener('touchstart', () => isPaused = true, {passive: true});
+    portfolioCarousel.addEventListener('touchend', () => { setTimeout(() => isPaused = false, 1000) }, {passive: true});
+
+    requestAnimationFrame(autoScrollPortfolio);
+  }
 });

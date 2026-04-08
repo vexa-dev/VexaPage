@@ -15,7 +15,7 @@ async function build() {
   console.log("✅ Carpeta dist/ preparada.");
 
   // 2. Procesar archivos HTML
-  const htmlFiles = ["index.html", "politicas.html"];
+  const htmlFiles = ["index.html", "politicas.html", "proyectos.html"];
   for (const file of htmlFiles) {
     if (await fs.pathExists(path.join(__dirname, file))) {
       let htmlContent = await fs.readFile(path.join(__dirname, file), "utf8");

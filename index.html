@@ -474,71 +474,175 @@
             </p>
           </div>
 
-          <!-- Portafolio: Tarjetas Apiladas Interactivas -->
-          <div class="relative w-full h-[120vh] xl:h-[140vh] mb-0" id="stacked-portfolio-container">
-            <div class="sticky top-[25vh] h-[400px] md:h-[450px] w-full flex items-center justify-center overflow-visible" id="sticky-viewport">
-              <div class="relative w-full max-w-5xl h-full perspective-1000" id="stacked-portfolio-cards">
-                
-                <!-- Tarjeta 1 (Sistema Automotriz) -->
-                <div class="portfolio-card-3d absolute inset-0 w-full glass rounded-3xl border border-white/10 overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] bg-[#0a0f12] z-30 transition-all duration-300 ease-out origin-bottom" data-index="0">
-                  <div class="flex flex-col md:flex-row h-full">
-                    <div class="w-full md:w-1/2 min-h-[250px] md:min-h-full relative overflow-hidden">
-                      <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10"></div>
-                      <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1000" class="absolute w-full h-full object-cover transition-transform duration-700 hover:scale-110" alt="Taller Automotriz">
-                    </div>
-                    <div class="w-full md:w-1/2 p-8 md:p-14 flex flex-col justify-center">
-                      <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">Web App</span>
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">React</span>
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">Java</span>
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">MySQL</span>
-                      </div>
-                      <h3 class="font-display text-3xl font-bold mb-4 text-white">Sistema Automotriz</h3>
-                      <p class="text-slate-400 mb-8 leading-relaxed">Aplicación web completa para un taller mecánico. Incluye registro detallado de vehículos, historial de reparaciones y gestión integral de mecánicos y trabajadores.</p>
-                      <button onclick="openProjectModal(0)" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+          <!-- Portafolio: Carrusel de Proyectos Interactivo -->
+          <div class="relative w-full pb-10">
+            <!-- Carrusel Contenedor -->
+            <div id="portfolio-carousel" class="flex gap-6 overflow-x-auto pb-8 pt-4 lg:px-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+              
+              <!-- Tarjeta 1: IdeaSAC -->
+              <div class="w-[280px] h-[400px] flex-shrink-0 rounded-2xl border border-white/10 overflow-hidden relative group cursor-pointer shadow-[0_15px_30px_rgba(0,0,0,0.5)]">
+                <!-- Imagen Genérica de Fondo -->
+                <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-black flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/20 text-8xl">lightbulb</span>
+                </div>
+                <!-- Vista Default -->
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end h-32 group-hover:opacity-0 transition-opacity duration-300">
+                  <h3 class="font-display text-2xl font-bold text-white tracking-wide">IdeaSAC</h3>
+                </div>
+                <!-- Overlay Hover -->
+                <div class="absolute inset-0 bg-black/40 backdrop-blur-md p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out border border-indigo-500/30">
+                  <div>
+                    <h3 class="font-display text-2xl font-bold mb-2 text-white">IdeaSAC</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Gestión y seguimiento de ideas corporativas, fomentando la colaboración y la escalabilidad de negocios.</p>
+                    <div class="flex gap-2 mb-4">
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">React</span>
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Node.js</span>
                     </div>
                   </div>
+                  <a href="proyectos.html#proyecto-ideasac" class="w-full py-3 bg-indigo-500/20 text-indigo-400 border border-indigo-500/50 rounded-xl font-bold tracking-wider uppercase text-xs hover:bg-indigo-500 hover:text-white transition-colors text-center block">
+                    Ver Proyecto
+                  </a>
                 </div>
-
-                <!-- Tarjeta 2 (LogiTrack Pro) -->
-                <div class="portfolio-card-3d absolute inset-0 w-full glass rounded-3xl border border-white/10 overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] bg-[#0a0f12] z-20 transition-all duration-300 ease-out origin-bottom" data-index="1">
-                  <div class="flex flex-col md:flex-row h-full">
-                    <div class="w-full md:w-1/2 min-h-[250px] md:min-h-full relative overflow-hidden">
-                       <div class="absolute inset-0 bg-indigo-500/20 mix-blend-overlay z-10"></div>
-                      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000" class="absolute w-full h-full object-cover transition-transform duration-700 hover:scale-110" alt="Dashboard Logistics">
-                    </div>
-                    <div class="w-full md:w-1/2 p-8 md:p-14 flex flex-col justify-center">
-                      <div class="flex gap-2 mb-4">
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">SaaS / BI</span>
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">React</span>
-                      </div>
-                      <h3 class="font-display text-3xl font-bold mb-4 text-white">LogiTrack Pro</h3>
-                      <p class="text-slate-400 mb-8 leading-relaxed">Sistema interno B2B para rastreo de flotas. Sustituimos decenas de hojas de Excel por un panel centralizado e intuitivo ahorrando 20hrs de trabajo semanal.</p>
-                      <button onclick="openProjectModal(1)" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tarjeta 3 (FitVexa Health) -->
-                <div class="portfolio-card-3d absolute inset-0 w-full glass rounded-3xl border border-white/10 overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] bg-[#0a0f12] z-10 transition-all duration-300 ease-out origin-bottom" data-index="2">
-                  <div class="flex flex-col md:flex-row h-full">
-                    <div class="w-full md:w-1/2 min-h-[250px] md:min-h-full relative overflow-hidden">
-                      <div class="absolute inset-0 bg-emerald-500/20 mix-blend-overlay z-10"></div>
-                      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" class="absolute w-full h-full object-cover transition-transform duration-700 hover:scale-110" alt="Health App">
-                    </div>
-                    <div class="w-full md:w-1/2 p-8 md:p-14 flex flex-col justify-center">
-                      <div class="flex gap-2 mb-4">
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">App Móvil</span>
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded uppercase tracking-wider">React Native</span>
-                      </div>
-                      <h3 class="font-display text-3xl font-bold mb-4 text-white">FitVexa Health</h3>
-                      <p class="text-slate-400 mb-8 leading-relaxed">Aplicación iOS y Android para ecosistema de salud. Integra planes nutricionales con rendimiento nativo, hardware watch y modo offline.</p>
-                      <button onclick="openProjectModal(2)" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-wider text-sm">Ver Proyecto Completo <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-                    </div>
-                  </div>
-                </div>
-
               </div>
+
+              <!-- Tarjeta 2: Vexa Task -->
+              <div class="w-[280px] h-[400px] flex-shrink-0 rounded-2xl border border-white/10 overflow-hidden relative group cursor-pointer shadow-[0_15px_30px_rgba(0,0,0,0.5)]">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-black flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/20 text-8xl">task_alt</span>
+                </div>
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end h-32 group-hover:opacity-0 transition-opacity duration-300">
+                  <h3 class="font-display text-2xl font-bold text-white tracking-wide">Vexa Task</h3>
+                </div>
+                <div class="absolute inset-0 bg-black/40 backdrop-blur-md p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out border border-blue-500/30">
+                  <div>
+                    <h3 class="font-display text-2xl font-bold mb-2 text-white">Vexa Task</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Gestor de tareas nativo con notificaciones cruzadas para maximizar tu productividad diaria.</p>
+                    <div class="flex gap-2 mb-4">
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">React Native</span>
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Firebase</span>
+                    </div>
+                  </div>
+                  <a href="proyectos.html#proyecto-vexa" class="w-full py-3 bg-blue-500/20 text-blue-400 border border-blue-500/50 rounded-xl font-bold tracking-wider uppercase text-xs hover:bg-blue-500 hover:text-white transition-colors text-center block">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+
+              <!-- Tarjeta 3: UrbaWear -->
+              <div class="w-[280px] h-[400px] flex-shrink-0 rounded-2xl border border-white/10 overflow-hidden relative group cursor-pointer shadow-[0_15px_30px_rgba(0,0,0,0.5)]">
+                <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-black flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/20 text-8xl">shopping_bag</span>
+                </div>
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end h-32 group-hover:opacity-0 transition-opacity duration-300">
+                  <h3 class="font-display text-2xl font-bold text-white tracking-wide">UrbaWear</h3>
+                </div>
+                <div class="absolute inset-0 bg-black/40 backdrop-blur-md p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out border border-amber-500/30">
+                  <div>
+                    <h3 class="font-display text-2xl font-bold mb-2 text-white">UrbaWear</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">E-Commerce de alta velocidad para marcas de moda con pasarela robusta.</p>
+                    <div class="flex gap-2 mb-4">
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Next.js</span>
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Stripe</span>
+                    </div>
+                  </div>
+                  <a href="proyectos.html#proyecto-urba" class="w-full py-3 bg-amber-500/20 text-amber-400 border border-amber-500/50 rounded-xl font-bold tracking-wider uppercase text-xs hover:bg-amber-500 hover:text-white transition-colors text-center block">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+
+              <!-- Tarjeta 4: Automotriz -->
+              <div class="w-[280px] h-[400px] flex-shrink-0 rounded-2xl border border-white/10 overflow-hidden relative group cursor-pointer shadow-[0_15px_30px_rgba(0,0,0,0.5)]">
+                <div class="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-black flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/20 text-8xl">directions_car</span>
+                </div>
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end h-32 group-hover:opacity-0 transition-opacity duration-300">
+                  <h3 class="font-display text-2xl font-bold text-white tracking-wide">Automotriz</h3>
+                </div>
+                <div class="absolute inset-0 bg-black/40 backdrop-blur-md p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out border border-rose-500/30">
+                  <div>
+                    <h3 class="font-display text-2xl font-bold mb-2 text-white">Automotriz</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Control logístico y operacional para talleres vehiculares e inventario mecánico.</p>
+                    <div class="flex gap-2 mb-4">
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Java</span>
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Spring</span>
+                    </div>
+                  </div>
+                  <a href="proyectos.html#proyecto-auto" class="w-full py-3 bg-rose-500/20 text-rose-400 border border-rose-500/50 rounded-xl font-bold tracking-wider uppercase text-xs hover:bg-rose-500 hover:text-white transition-colors text-center block">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+
+              <!-- Tarjeta 5: Biblioteca -->
+              <div class="w-[280px] h-[400px] flex-shrink-0 rounded-2xl border border-white/10 overflow-hidden relative group cursor-pointer shadow-[0_15px_30px_rgba(0,0,0,0.5)]">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-black flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/20 text-8xl">menu_book</span>
+                </div>
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end h-32 group-hover:opacity-0 transition-opacity duration-300">
+                  <h3 class="font-display text-2xl font-bold text-white tracking-wide">Biblioteca</h3>
+                </div>
+                <div class="absolute inset-0 bg-black/40 backdrop-blur-md p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out border border-purple-500/30">
+                  <div>
+                    <h3 class="font-display text-2xl font-bold mb-2 text-white">Biblioteca</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Administración inteligente de catálogos y sistemas de préstamos documentados.</p>
+                    <div class="flex gap-2 mb-4">
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">MySQL</span>
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Express</span>
+                    </div>
+                  </div>
+                  <a href="proyectos.html#proyecto-biblio" class="w-full py-3 bg-purple-500/20 text-purple-400 border border-purple-500/50 rounded-xl font-bold tracking-wider uppercase text-xs hover:bg-purple-500 hover:text-white transition-colors text-center block">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+
+              <!-- Tarjeta 6: Heladería -->
+              <div class="w-[280px] h-[400px] flex-shrink-0 rounded-2xl border border-white/10 overflow-hidden relative group cursor-pointer shadow-[0_15px_30px_rgba(0,0,0,0.5)]">
+                <div class="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-black flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/20 text-8xl">icecream</span>
+                </div>
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end h-32 group-hover:opacity-0 transition-opacity duration-300">
+                  <h3 class="font-display text-2xl font-bold text-white tracking-wide">Heladería</h3>
+                </div>
+                <div class="absolute inset-0 bg-black/95 p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out border border-pink-500/30">
+                  <div>
+                    <h3 class="font-display text-2xl font-bold mb-2 text-white">Heladería</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Punto de Venta veloz (POS) en tiempo real con monitoreo para despachos de alimentos ligeros.</p>
+                    <div class="flex gap-2 mb-4">
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">React</span>
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Tailwind</span>
+                    </div>
+                  </div>
+                  <a href="proyectos.html#proyecto-hela" class="w-full py-3 bg-pink-500/20 text-pink-400 border border-pink-500/50 rounded-xl font-bold tracking-wider uppercase text-xs hover:bg-pink-500 hover:text-white transition-colors text-center block">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+
+              <!-- Tarjeta 7: Nutricraft -->
+              <div class="w-[280px] h-[400px] flex-shrink-0 rounded-2xl border border-white/10 overflow-hidden relative group cursor-pointer shadow-[0_15px_30px_rgba(0,0,0,0.5)]">
+                <div class="absolute inset-0 bg-gradient-to-br from-green-500/20 to-black flex items-center justify-center">
+                  <span class="material-symbols-outlined text-white/20 text-8xl">restaurant</span>
+                </div>
+                <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end h-32 group-hover:opacity-0 transition-opacity duration-300">
+                  <h3 class="font-display text-2xl font-bold text-white tracking-wide">Nutricraft</h3>
+                </div>
+                <div class="absolute inset-0 bg-black/95 p-6 flex flex-col justify-between translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out border border-green-500/30">
+                  <div>
+                    <h3 class="font-display text-2xl font-bold mb-2 text-white">Nutricraft</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Gamificación y salud nutricional estructurando dietas personalizadas generadas algorítmicamente.</p>
+                    <div class="flex gap-2 mb-4">
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Kotlin</span>
+                      <span class="font-bold text-[10px] items-center justify-center flex uppercase bg-white/10 px-2 py-1 rounded text-slate-300 border border-white/5">Firebase</span>
+                    </div>
+                  </div>
+                  <a href="proyectos.html#proyecto-nutri" class="w-full py-3 bg-green-500/20 text-green-400 border border-green-500/50 rounded-xl font-bold tracking-wider uppercase text-xs hover:bg-green-500 hover:text-white transition-colors text-center block">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
 

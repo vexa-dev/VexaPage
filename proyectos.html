@@ -1,0 +1,2232 @@
+<!doctype html>
+<html class="scroll-smooth scroll-pt-16" lang="es">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2GKJSPYJXQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2GKJSPYJXQ");
+    </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>VEXA - Proyectos Destacados</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="src/img/Vexa - Fondo blanco.svg"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script src="src/js/tailwind.config.js"></script>
+    <link href="src/css/styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <style>
+      .prose img {
+        border-radius: 0.75rem;
+      }
+      .tech-icon {
+        filter: grayscale(1) brightness(0) invert(1);
+        opacity: 0.7;
+        transition: all 0.3s ease;
+      }
+      .tech-icon:hover {
+        filter: grayscale(0) brightness(1) invert(0);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-dark text-slate-100 font-sans antialiased select-none"
+    oncontextmenu="return false;"
+    ondragstart="return false;"
+    ondrop="return false;"
+  >
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 glass border-b border-white/5">
+      <nav
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            alt="VEXA Logo"
+            class="h-10 w-10 object-contain rounded-full"
+            src="src/img/Vexa - Fondo negro.svg"
+          />
+          <span
+            class="font-display font-extrabold text-2xl tracking-tight text-white"
+            >VEXA</span
+          >
+        </div>
+        <div class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-transparent"
+            href="index.html#inicio"
+            >Inicio</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-transparent"
+            href="index.html#quienes-somos"
+            >Quiénes Somos</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-transparent"
+            href="index.html#servicios"
+            >Servicios</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors border-b-2 border-primary text-primary"
+            href="proyectos.html"
+            >Portafolio</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="index.html#equipo"
+            >Equipo</a
+          >
+          <a
+            class="bg-primary hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all"
+            href="index.html#contacto"
+            >Contacto</a
+          >
+        </div>
+        <button class="md:hidden text-white">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </nav>
+    </header>
+
+    <main
+      class="pt-32 pb-24 relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 lg:gap-0"
+    >
+      <!-- Ambient Light -->
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-gradient-to-b from-primary/10 to-transparent blur-3xl rounded-full -z-10 pointer-events-none"
+      ></div>
+
+      <!-- ÍNDICE IZQUIERDO -->
+      <aside
+        class="hidden lg:block w-72 flex-shrink-0 sticky top-24 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar lg:pr-8 pr-4"
+      >
+        <!-- Botón Volver -->
+        <a
+          href="index.html#portafolio"
+          class="flex items-center gap-2 text-slate-400 hover:text-primary transition-colors font-medium text-sm mb-8 group"
+        >
+          <span
+            class="material-symbols-outlined text-xl group-hover:-translate-x-1 transition-transform"
+            >arrow_back</span
+          >
+          Regresar al Portafolio
+        </a>
+
+        <nav class="text-sm">
+          <div class="mb-4">
+            <h3
+              class="font-bold text-white mb-4 text-base tracking-wide border-b border-white/10 pb-2"
+            >
+              Nuestros Proyectos
+            </h3>
+            <ul class="space-y-1">
+              <li>
+                <a
+                  href="#proyecto-ideasac"
+                  class="flex items-center justify-between cursor-pointer hover:text-primary text-slate-400 py-2 px-3 rounded-lg hover:bg-white/5 transition-all"
+                >
+                  IdeaSAC
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#proyecto-vexa"
+                  class="flex items-center justify-between cursor-pointer hover:text-primary text-slate-400 py-2 px-3 rounded-lg hover:bg-white/5 transition-all"
+                >
+                  Vexa Task
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#proyecto-urba"
+                  class="flex items-center justify-between cursor-pointer hover:text-primary text-slate-400 py-2 px-3 rounded-lg hover:bg-white/5 transition-all"
+                >
+                  UrbaWear
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#proyecto-auto"
+                  class="flex items-center justify-between cursor-pointer hover:text-primary text-slate-400 py-2 px-3 rounded-lg hover:bg-white/5 transition-all"
+                >
+                  Automotriz
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#proyecto-biblio"
+                  class="flex items-center justify-between cursor-pointer hover:text-primary text-slate-400 py-2 px-3 rounded-lg hover:bg-white/5 transition-all"
+                >
+                  Biblioteca
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#proyecto-hela"
+                  class="flex items-center justify-between cursor-pointer hover:text-primary text-slate-400 py-2 px-3 rounded-lg hover:bg-white/5 transition-all"
+                >
+                  Heladería
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#proyecto-nutri"
+                  class="flex items-center justify-between cursor-pointer hover:text-primary text-slate-400 py-2 px-3 rounded-lg hover:bg-white/5 transition-all"
+                >
+                  Nutricraft
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- SEPARADOR VERTICAL -->
+      <div
+        class="hidden lg:block w-px bg-white/5 mx-6 self-stretch min-h-[500px]"
+      ></div>
+
+      <!-- CONTENIDO DERECHO -->
+      <div
+        class="flex-grow max-w-none w-full prose prose-invert prose-slate prose-headings:text-white prose-a:text-primary prose-a:no-underline hover:prose-a:underline lg:pl-6 pb-20"
+      >
+        <div class="space-y-32">
+          <!-- Proyecto 1: IdeaSAC -->
+          <section id="proyecto-ideasac" class="scroll-mt-32">
+            <h2
+              class="text-4xl md:text-5xl font-display font-bold mb-3 text-white !mt-0"
+            >
+              IdeaSAC
+            </h2>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Gestión de Astillero</span
+              >
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Sistema Corporativo</span
+              >
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Left Column: Description & Media -->
+              <div class="order-2 lg:order-1 lg:col-span-2">
+                <p class="text-slate-300 leading-relaxed mb-6">
+                  Solución web integral para la industria naval que unifica la
+                  presencia digital pública con una administración interna
+                  centralizada. El sistema permite a los clientes explorar el
+                  catálogo de embarcaciones de aluminio y solicitar cotizaciones
+                  personalizadas, mientras los administradores gestionan el
+                  flujo de trabajo, el personal calificado y las órdenes de
+                  producción desde un dashboard especializado.
+                </p>
+
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose"
+                >
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-orange-400 text-sm"
+                        >warning</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-orange-400/80"
+                        >El Reto</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      La empresa no contaba con presencia digital ni un canal
+                      oficial de comunicación, por lo que necesitaban una web
+                      profesional y un sistema de gestión integrado para
+                      centralizar y mejorar todo el proceso de contacto con sus
+                      clientes.
+                    </p>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-primary text-sm"
+                        >auto_awesome</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-primary/80"
+                        >La Solución</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Implementación de una arquitectura MVC robusta utilizando
+                      Spring Boot y Java para la lógica de backend, con
+                      Thymeleaf para el renderizado dinámico y una base de datos
+                      MySQL estructurada para escalabilidad operativa.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Bento Grid 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                  <div
+                    class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl h-64 md:h-[400px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/1200x800/1e293b/475569?text=VEXA+DASHBOARD"
+                      alt="IdeaSAC Astillero Principal"
+                    />
+                  </div>
+                  <div
+                    class="md:col-span-2 relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/1200x800/1e293b/475569?text=VEXA+PLATFORM"
+                      alt="Producción barcos aluminio"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=ADMIN+PANEL"
+                      alt="Admin Dashboard Vexa"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=SYSTEM+VIEW"
+                      alt="Cotizaciones Sistema"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Meta Info Elements -->
+              <div class="order-1 lg:order-2 lg:col-span-1 space-y-8 not-prose">
+                <div class="mb-6 border-b border-white/5 pb-6">
+                  <h4 class="text-white font-display text-base mb-4">
+                    Stack Tecnológico
+                  </h4>
+                  <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-6"
+                  >
+                    <!-- Frontend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Frontend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-html5-plain colored tech-icon"
+                          title="HTML5"
+                        ></i>
+                        <i
+                          class="devicon-css3-plain colored tech-icon"
+                          title="CSS3"
+                        ></i>
+                        <i
+                          class="devicon-javascript-plain colored tech-icon"
+                          title="JavaScript"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Backend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Backend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-java-plain colored tech-icon"
+                          title="Java"
+                        ></i>
+                        <i
+                          class="devicon-spring-original colored tech-icon"
+                          title="Spring Boot"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Base de Datos -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >BD</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-mysql-plain colored tech-icon"
+                          title="MySQL"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Herramientas -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Herramientas</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-vscode-plain colored tech-icon"
+                          title="VS Code"
+                        ></i>
+                        <i
+                          class="devicon-github-original tech-icon"
+                          title="GitHub"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4"
+                >
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >query_stats</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Panel Administrativo
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Gestión de cotizaciones, personal y catálogo interno.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >engineering</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Portal de Cotización
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Solicitud masiva de proyectos de aluminio y naval.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >inventory_2</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Showroom Dinámico
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Visualización de Stock y especificaciones técnicas.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >security</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Integridad de Datos
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Arquitectura MVC segura con persistencia MySQL.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Proyecto 2: Vexa Task -->
+          <section id="proyecto-vexa" class="scroll-mt-32">
+            <h2
+              class="text-4xl md:text-5xl font-display font-bold mb-3 text-white !mt-0"
+            >
+              Vexa Task
+            </h2>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >App Móvil</span
+              >
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Cross-Platform</span
+              >
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Left Column: Description & Media -->
+              <div class="order-2 lg:order-1 lg:col-span-2">
+                <p class="text-slate-300 leading-relaxed mb-6">
+                  Gestor de tareas inteligente diseñado para optimizar tu
+                  productividad diaria con notificaciones en tiempo real
+                  cruzando dispositivos. Se implementaron algoritmos de
+                  ordenamiento natural apoyados por una base de datos reactiva
+                  que mantiene todo sincronizado offline.
+                </p>
+
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose"
+                >
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-orange-400 text-sm"
+                        >warning</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-orange-400/80"
+                        >El Reto</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Garantizar que los equipos puedan seguir gestionando
+                      tareas críticas en zonas con conectividad inestable,
+                      manteniendo la integridad de los datos una vez recuperada
+                      la red.
+                    </p>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-primary text-sm"
+                        >auto_awesome</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-primary/80"
+                        >La Solución</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Desarrollo de una base de datos reactiva local con
+                      sincronización incremental asíncrona y lógica de
+                      resolución de conflictos automática basada en marcas
+                      temporales.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                  <div
+                    class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl h-64 md:h-[400px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/1200x800/1e293b/475569?text=APP+DASHBOARD"
+                      alt="Dashboard app"
+                    />
+                  </div>
+                  <div
+                    class="md:col-span-2 relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=MOBILE+UI"
+                      alt="App movil visual"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=UX+FLOW"
+                      alt="Flujo ux ui"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=MOCKUP"
+                      alt="UI ux mock"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Meta Info Elements -->
+              <div class="order-1 lg:order-2 lg:col-span-1 space-y-8 not-prose">
+                <div class="mb-6 border-b border-white/5 pb-6">
+                  <h4 class="text-white font-display text-base mb-4">
+                    Stack Tecnológico
+                  </h4>
+                  <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-6"
+                  >
+                    <!-- Frontend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Frontend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-react-original colored tech-icon"
+                          title="React Native"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Backend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Backend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-firebase-plain colored tech-icon"
+                          title="Firebase Functions"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Base de Datos -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >BD</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-firebase-plain colored tech-icon"
+                          title="Firebase Cloud Firestore"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Herramientas -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Herramientas</span
+                      >
+                      <div
+                        class="flex flex-wrap items-center gap-3 text-3xl text-white"
+                      >
+                        <i
+                          class="devicon-vscode-plain colored tech-icon"
+                          title="VS Code"
+                        ></i>
+                        <i
+                          class="devicon-github-original tech-icon"
+                          title="GitHub"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4"
+                >
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >wifi_off</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Offline First
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Sincronización automática sin conexión.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >sort</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Smart Sorting
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Algoritmos de ordenamiento natural.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >devices</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Multiplataforma
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Experiencia fluida en iOS y Android.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >notifications_active</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Push Notifications
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Alertas veloces en tiempo real.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Proyecto 3: UrbaWear -->
+          <section id="proyecto-urba" class="scroll-mt-32">
+            <h2
+              class="text-4xl md:text-5xl font-display font-bold mb-3 text-white !mt-0"
+            >
+              UrbaWear
+            </h2>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >E-Commerce</span
+              >
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Arquitectura Escalable</span
+              >
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Left Column: Description & Media -->
+              <div class="order-2 lg:order-1 lg:col-span-2">
+                <p class="text-slate-300 leading-relaxed mb-6">
+                  Tienda en línea completa de moda urbana con carrito de compras
+                  de alta velocidad, pasarela de pago nativa y arquitectura de
+                  carga en caché severa. Logramos índices de carga sub-segundo
+                  para reducir el abandono en la compra y mejorar las métricas
+                  de SEO y conversión orgánicas.
+                </p>
+
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose"
+                >
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-orange-400 text-sm"
+                        >warning</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-orange-400/80"
+                        >El Reto</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Las altas tasas de abandono en el check-out debido a
+                      procesos de carga lentos y pasarelas de pago externas que
+                      no se sentían integradas a la marca.
+                    </p>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-primary text-sm"
+                        >auto_awesome</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-primary/80"
+                        >La Solución</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Arquitectura Jamstack con Next.js para pre-renderizado de
+                      catálogo y una integración nativa de Stripe que reduce el
+                      flujo de pago a menos de 3 clics con carga sub-segundo.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                  <div
+                    class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl h-64 md:h-[400px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/1200x800/1e293b/475569?text=ECOMMERCE+VIEW"
+                      alt="Ecommerce view"
+                    />
+                  </div>
+                  <div
+                    class="md:col-span-2 relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=PRODUCT+GRID"
+                      alt="Ropa fashion"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=SHOP+UI"
+                      alt="UI shop"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=CHECKOUT+PAGE"
+                      alt="Check out page"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Meta Info Elements -->
+              <div class="order-1 lg:order-2 lg:col-span-1 space-y-8 not-prose">
+                <div class="mb-6 border-b border-white/5 pb-6">
+                  <h4 class="text-white font-display text-base mb-4">
+                    Stack Tecnológico
+                  </h4>
+                  <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-6"
+                  >
+                    <!-- Frontend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Frontend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-nextjs-plain tech-icon"
+                          title="Next.js"
+                        ></i>
+                        <i
+                          class="devicon-react-original colored tech-icon"
+                          title="React"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Backend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Backend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <img
+                          src="https://cdn.simpleicons.org/stripe"
+                          class="tech-icon w-8 h-8 hover:scale-110 transition-transform !m-0"
+                          title="Stripe"
+                          alt="Stripe"
+                        />
+                        <i
+                          class="devicon-nodejs-plain colored tech-icon"
+                          title="Node.js"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Base de Datos -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >BD</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-postgresql-plain colored tech-icon"
+                          title="PostgreSQL"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Herramientas -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Herramientas</span
+                      >
+                      <div
+                        class="flex flex-wrap items-center gap-3 text-3xl text-white"
+                      >
+                        <i
+                          class="devicon-vscode-plain colored tech-icon"
+                          title="VS Code"
+                        ></i>
+                        <i
+                          class="devicon-github-original tech-icon"
+                          title="GitHub"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4"
+                >
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >timer</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Sub-Second Load
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Tiempos de carga casi instantáneos.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >payments</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Pagos Nativos
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Integración fluida de tarjetas y billeteras.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >dns</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Caching Profundo
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Máxima disponibilidad ante alto tráfico.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >travel_explore</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        SEO Ready
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Estructura limpia para dominar rankings.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Proyecto 4: Automotriz -->
+          <section id="proyecto-auto" class="scroll-mt-32">
+            <h2
+              class="text-4xl md:text-5xl font-display font-bold mb-3 text-white !mt-0"
+            >
+              Automotriz
+            </h2>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Sistema Web</span
+              >
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Control Inventario</span
+              >
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Left Column: Description & Media -->
+              <div class="order-2 lg:order-1 lg:col-span-2">
+                <p class="text-slate-300 leading-relaxed mb-6">
+                  Sistema complejo de control logístico para talleres
+                  automotrices. Gestiona inventario de repuestos, mecánicos,
+                  historiales y citas de clientes. Cuenta con generador de
+                  boletas automáticas, dashboards interactivos semanales de
+                  ingresos y recordatorios SMS a clientes recurrentes.
+                </p>
+
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose"
+                >
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-orange-400 text-sm"
+                        >warning</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-orange-400/80"
+                        >El Reto</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Controlar el flujo de miles de repuestos y servicios
+                      simultáneos desde diferentes terminales, evitando errores
+                      manuales en el inventario y colisiones de datos.
+                    </p>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-primary text-sm"
+                        >auto_awesome</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-primary/80"
+                        >La Solución</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Núcleo transaccional ACID en PostgreSQL con procesos de
+                      validación cruzada en tiempo real y dashboards integrados
+                      que alertan sobre discrepancias de stock al instante.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                  <div
+                    class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl h-64 md:h-[400px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/1200x800/1e293b/475569?text=LOGISTICS+SYSTEM"
+                      alt="Mecánico view"
+                    />
+                  </div>
+                  <div
+                    class="md:col-span-2 relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=INVENTORY+TOOLS"
+                      alt="Automotriz tools"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=TALLER+DASHBOARD"
+                      alt="Dashboard Taller"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=SERVICE+APP"
+                      alt="Reparaciones App"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Meta Info Elements -->
+              <div class="order-1 lg:order-2 lg:col-span-1 space-y-8 not-prose">
+                <div class="mb-6 border-b border-white/5 pb-6">
+                  <h4 class="text-white font-display text-base mb-4">
+                    Stack Tecnológico
+                  </h4>
+                  <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-6"
+                  >
+                    <!-- Frontend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Frontend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-html5-plain colored tech-icon"
+                          title="HTML5"
+                        ></i>
+                        <i
+                          class="devicon-css3-plain colored tech-icon"
+                          title="CSS3"
+                        ></i>
+                        <i
+                          class="devicon-javascript-plain colored tech-icon"
+                          title="JavaScript"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Backend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Backend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-java-plain colored tech-icon"
+                          title="Java"
+                        ></i>
+                        <i
+                          class="devicon-spring-original colored tech-icon"
+                          title="Spring"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Base de Datos -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >BD</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-mysql-plain colored tech-icon"
+                          title="MySQL"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Herramientas -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Herramientas</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-eclipse-plain colored tech-icon"
+                          title="Eclipse/IntelliJ"
+                        ></i>
+                        <i
+                          class="devicon-github-original tech-icon"
+                          title="GitHub"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4"
+                >
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >sms</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        SMS Reminders
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Alertas automatizadas a dispositivos móviles.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >inventory</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Control Logístico
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Gestión milimétrica de repuestos y personal.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >receipt_long</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Fast Billing
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Generación de boletas y facturas al instante.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >finance_mode</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Dashboards Integrados
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Análisis interactivo de operaciones semanales.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Proyecto 5: Biblioteca -->
+          <section id="proyecto-biblio" class="scroll-mt-32">
+            <h2
+              class="text-4xl md:text-5xl font-display font-bold mb-3 text-white !mt-0"
+            >
+              Biblioteca
+            </h2>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Dashboard Corporativo</span
+              >
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Left Column: Description & Media -->
+              <div class="order-2 lg:order-1 lg:col-span-2">
+                <p class="text-slate-300 leading-relaxed mb-6">
+                  Administración inteligente de catálogos de libros físicos y
+                  virtuales. Controla el flujo de préstamos a corto y largo
+                  plazo, devoluciones automatizadas y reportes de penalidades
+                  usando escáneres de códigos de barras (QR) embebidos en el
+                  propio sistema centralizado.
+                </p>
+
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose"
+                >
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-orange-400 text-sm"
+                        >warning</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-orange-400/80"
+                        >El Reto</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Proporcionar búsquedas instantáneas en un catálogo masivo
+                      de miles de libros físicos y PDFs, permitiendo filtros
+                      complejos por autor, género y disponibilidad.
+                    </p>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-primary text-sm"
+                        >auto_awesome</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-primary/80"
+                        >La Solución</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Integración de Elasticsearch como motor de indexación de
+                      texto completo, permitiendo búsquedas predictivas y
+                      filtrado por facetas con tiempos de respuesta inferiores a
+                      100ms.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                  <div
+                    class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl h-64 md:h-[400px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/1200x800/1e293b/475569?text=LIBRARY+MANAGEMENT"
+                      alt="Libreria libros"
+                    />
+                  </div>
+                  <div
+                    class="md:col-span-2 relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=BOOK+VIEW"
+                      alt="Libro view"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=LIBRARY+DASHBOARD"
+                      alt="Dashboard UX libros"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=BOOKS+STACK"
+                      alt="Dashboard libros stack"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Meta Info Elements -->
+              <div class="order-1 lg:order-2 lg:col-span-1 space-y-8 not-prose">
+                <div class="mb-6 border-b border-white/5 pb-6">
+                  <h4 class="text-white font-display text-base mb-4">
+                    Stack Tecnológico
+                  </h4>
+                  <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-6"
+                  >
+                    <!-- Frontend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Frontend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-react-original colored tech-icon"
+                          title="React"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Backend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Backend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-express-original tech-icon"
+                          title="Express"
+                        ></i>
+                        <i
+                          class="devicon-nodejs-plain colored tech-icon"
+                          title="Node.js"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Base de Datos -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >BD</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-mysql-plain colored tech-icon"
+                          title="MySQL"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Herramientas -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Herramientas</span
+                      >
+                      <div
+                        class="flex flex-wrap items-center gap-3 text-3xl text-white"
+                      >
+                        <i
+                          class="devicon-vscode-plain colored tech-icon"
+                          title="VS Code"
+                        ></i>
+                        <i
+                          class="devicon-github-original tech-icon"
+                          title="GitHub"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4"
+                >
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >qr_code_scanner</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Lector QR Nativo
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Escaneo veloz de libros integrado en sistema.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >sync_alt</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Smart Loans
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Gestión de préstamos a corto y largo plazo.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >gavel</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Penalidades Auto
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Control de devoluciones y cálculo de moras.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >import_contacts</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Catálogo Híbrido
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Consolidación de archivos físicos y digitales.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Proyecto 6: Heladería -->
+          <section id="proyecto-hela" class="scroll-mt-32">
+            <h2
+              class="text-4xl md:text-5xl font-display font-bold mb-3 text-white !mt-0"
+            >
+              Heladería
+            </h2>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >POS Ventas</span
+              >
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Touch UI</span
+              >
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Left Column: Description & Media -->
+              <div class="order-2 lg:order-1 lg:col-span-2">
+                <p class="text-slate-300 leading-relaxed mb-6">
+                  Un Punto de Venta (POS) rápido e innovador enfocado en
+                  despachos masivos de alimentos ligeros con pantallas táctiles,
+                  monitoreo de stock de ingredientes en milisegundos y
+                  facturación electrónica instantánea para agilizar filas en
+                  horas pico.
+                </p>
+
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose"
+                >
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-orange-400 text-sm"
+                        >warning</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-orange-400/80"
+                        >El Reto</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      La saturación del sistema de ventas durante horas de alta
+                      demanda, donde los retardos en la facturación electrónica
+                      generaban colas y frustración en los clientes.
+                    </p>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-primary text-sm"
+                        >auto_awesome</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-primary/80"
+                        >La Solución</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Implementación de colas de procesamiento asíncronas con
+                      Redis para desvincular la generación de comprobantes del
+                      flujo de venta táctil, eliminando cuellos de botella.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                  <div
+                    class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl h-64 md:h-[400px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/1200x800/1e293b/475569?text=ICE+CREAM+SHOP"
+                      alt="Helados store"
+                    />
+                  </div>
+                  <div
+                    class="md:col-span-2 relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=POS+TERMINAL"
+                      alt="Pantalla POS Táctil"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=ICE+CREAM+POS"
+                      alt="Postres shop"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=CASH+REGISTER"
+                      alt="Caja registradora tableta"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Meta Info Elements -->
+              <div class="order-1 lg:order-2 lg:col-span-1 space-y-8 not-prose">
+                <div class="mb-6 border-b border-white/5 pb-6">
+                  <h4 class="text-white font-display text-base mb-4">
+                    Stack Tecnológico
+                  </h4>
+                  <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-6"
+                  >
+                    <!-- Frontend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Frontend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-react-original colored tech-icon"
+                          title="React"
+                        ></i>
+                        <i
+                          class="devicon-tailwindcss-plain colored tech-icon"
+                          title="Tailwind CSS"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Backend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Backend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-nodejs-plain colored tech-icon"
+                          title="Node.js"
+                        ></i>
+                        <i
+                          class="devicon-firebase-plain colored tech-icon"
+                          title="Firebase"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Base de Datos -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >BD</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-firebase-plain colored tech-icon"
+                          title="Firebase Realtime DB"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Herramientas -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Herramientas</span
+                      >
+                      <div
+                        class="flex flex-wrap items-center gap-3 text-3xl text-white"
+                      >
+                        <i
+                          class="devicon-vscode-plain colored tech-icon"
+                          title="VS Code"
+                        ></i>
+                        <i
+                          class="devicon-github-original tech-icon"
+                          title="GitHub"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4"
+                >
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >touch_app</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Touch UI Optimizado
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Interfaces adaptadas para pulsación veloz.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >precision_manufacturing</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Monitoreo Stock
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Descuento crudo de inventario en milisegundos.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >point_of_sale</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Factura Express
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Emisión electrónica acelerada anti-colapso.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >bolt</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Alto Rendimiento
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Creado para sobrevivir a picos de alta demanda.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Proyecto 7: Nutricraft -->
+          <section id="proyecto-nutri" class="scroll-mt-32">
+            <h2
+              class="text-4xl md:text-5xl font-display font-bold mb-3 text-white !mt-0"
+            >
+              Nutricraft
+            </h2>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Salud & Bienestar</span
+              >
+              <span
+                class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-[10px] font-bold rounded-full uppercase tracking-wider"
+                >Micro Apps</span
+              >
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- Left Column: Description & Media -->
+              <div class="order-2 lg:order-1 lg:col-span-2">
+                <p class="text-slate-300 leading-relaxed mb-6">
+                  Aplicación de bolsillo que gamifica la salud preventiva
+                  construyendo dietas balanceadas generadas en conjunto con
+                  nutricionistas locales. Incluye mapas de tiendas de
+                  suplementación, recordatorios de agua y conectividad a
+                  pulseras inteligentes.
+                </p>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose"
+                >
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-orange-400 text-sm"
+                        >warning</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-orange-400/80"
+                        >El Reto</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Visualizar progresiones biométricas complejas y dietas
+                      dinámicas en dispositivos móviles de gama media sin
+                      sacrificar la fluidez de la navegación o la batería.
+                    </p>
+                  </div>
+                  <div
+                    class="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-sm"
+                  >
+                    <div class="flex items-center gap-2 mb-2">
+                      <span
+                        class="material-symbols-outlined text-primary text-sm"
+                        >auto_awesome</span
+                      >
+                      <span
+                        class="text-[10px] font-bold uppercase tracking-wider text-primary/80"
+                        >La Solución</span
+                      >
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed m-0">
+                      Normalización de datos en el cliente y uso de renderizado
+                      optimizado por hardware para los gráficos, asegurando 60
+                      FPS incluso con grandes volúmenes de datos históricos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                  <div
+                    class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl h-64 md:h-[400px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/1200x800/1e293b/475569?text=HEALTH+APP"
+                      alt="Diet foods"
+                    />
+                  </div>
+                  <div
+                    class="md:col-span-2 relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=DIET+PLANNRER"
+                      alt="Nutricion app dietas"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=DIET+APP+UI"
+                      alt="Dieta menu ux"
+                    />
+                  </div>
+                  <div
+                    class="relative overflow-hidden rounded-xl h-48 md:h-[192px] border border-white/10"
+                  >
+                    <img
+                      class="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                      src="https://placehold.co/800x600/1e293b/475569?text=HEALTHY+UI"
+                      alt="Healthy life app ui"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Meta Info Elements -->
+              <div class="order-1 lg:order-2 lg:col-span-1 space-y-8 not-prose">
+                <div class="mb-6 border-b border-white/5 pb-6">
+                  <h4 class="text-white font-display text-base mb-4">
+                    Stack Tecnológico
+                  </h4>
+                  <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-6"
+                  >
+                    <!-- Frontend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Frontend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-flutter-plain colored tech-icon"
+                          title="Flutter"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Backend -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Backend</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-dart-plain colored tech-icon"
+                          title="Dart"
+                        ></i>
+                        <i
+                          class="devicon-firebase-plain colored tech-icon"
+                          title="Firebase Auth/Cloud"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Base de Datos -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >BD</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-firebase-plain colored tech-icon"
+                          title="Firebase Firestore"
+                        ></i>
+                      </div>
+                    </div>
+                    <!-- Herramientas -->
+                    <div>
+                      <span
+                        class="block text-xs text-slate-400 uppercase tracking-widest mb-3 font-bold"
+                        >Herramientas</span
+                      >
+                      <div class="flex flex-wrap items-center gap-3 text-3xl">
+                        <i
+                          class="devicon-androidstudio-plain colored tech-icon"
+                          title="Android Studio"
+                        ></i>
+                        <i
+                          class="devicon-github-original tech-icon"
+                          title="GitHub"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Key Features -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4"
+                >
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >stadia_controller</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Gamificación
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Recompensas por adoptar hábitos saludables.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >watch</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Wearable Ready
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Sincronización con relojes y smartbands.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >medical_services</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Dietas Avaladas
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Planes generados con profesionales médicos locales.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] backdrop-blur-md border border-white/10 hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                  >
+                    <span class="material-symbols-outlined text-primary mt-0.5"
+                      >water_drop</span
+                    >
+                    <div>
+                      <h5 class="text-white font-bold mb-1 mt-0 text-sm">
+                        Smart Tracking
+                      </h5>
+                      <p class="text-slate-400 text-xs leading-relaxed m-0">
+                        Avisos hídricos y podómetro integrado.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- ------------------- Pie de Página (Footer) ------------------ -->
+    <footer class="bg-accent pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-2 md:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <img
+                alt="VEXA Logo"
+                class="h-8 w-8 object-contain rounded-full"
+                src="src/img/Vexa - Fondo negro.svg"
+              />
+              <span
+                class="font-display font-extrabold text-xl tracking-tight text-white"
+                >VEXA</span
+              >
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">
+              Construyendo la próxima generación de productos digitales con
+              precisión y pasión.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6 text-white">Enlaces Rápidos</h5>
+            <ul class="space-y-4 text-sm text-slate-500">
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="index.html#quienes-somos"
+                  >Quiénes Somos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="index.html#servicios"
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="index.html#portafolio"
+                  >Portafolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="index.html#equipo"
+                  >Equipo</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="index.html#contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6 text-white">Servicios</h5>
+            <ul class="space-y-4 text-sm text-slate-500">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Web Apps</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Desarrollo Móvil</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Sistemas CRM</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Consultoría Cloud</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 uppercase tracking-widest"
+        >
+          <p>© 2025 VEXA Software Agency. Todos los derechos reservados.</p>
+          <div
+            class="flex flex-wrap items-center justify-center gap-6 md:gap-8"
+          >
+            <a
+              class="hover:text-primary transition-colors"
+              href="politicas.html"
+              >Política de Privacidad</a
+            >
+            <a
+              class="hover:text-primary transition-colors"
+              href="politicas.html#section-9"
+              >Términos de Servicio</a
+            >
+            <a
+              class="hover:text-primary transition-colors flex items-center gap-1.5"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-[16px]"
+                >menu_book</span
+              >
+              Libro de Reclamaciones
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ScrollSpy Script (Específico para proyectos) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section[id^='proyecto-']");
+        const navLinks = document.querySelectorAll(
+          "aside a[href^='#proyecto-']",
+        );
+
+        function highlightNavigation() {
+          let scrollY = window.scrollY;
+
+          // Activate if scrolled to top
+          if (scrollY < 100) {
+            navLinks.forEach((link) => {
+              link.classList.remove(
+                "text-primary",
+                "font-bold",
+                "bg-white/5",
+                "border-l-2",
+                "border-primary",
+              );
+            });
+            if (navLinks.length > 0) {
+              const firstLink = navLinks[0];
+              firstLink.classList.add(
+                "text-primary",
+                "font-bold",
+                "bg-white/5",
+                "border-l-2",
+                "border-primary",
+              );
+            }
+            return;
+          }
+
+          sections.forEach((current) => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 200; // Offset for header + margin
+            const sectionId = current.getAttribute("id");
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+              navLinks.forEach((link) => {
+                link.classList.remove(
+                  "text-primary",
+                  "font-bold",
+                  "bg-white/5",
+                  "border-l-2",
+                  "border-primary",
+                );
+                if (link.getAttribute("href") === "#" + sectionId) {
+                  link.classList.add(
+                    "text-primary",
+                    "font-bold",
+                    "bg-white/5",
+                    "border-l-2",
+                    "border-primary",
+                  );
+
+                  // Scroll the sidebar itself if the element goes out of view
+                  const aside = document.querySelector("aside");
+                  const linkRect = link.getBoundingClientRect();
+                  const asideRect = aside.getBoundingClientRect();
+
+                  if (
+                    linkRect.top < asideRect.top ||
+                    linkRect.bottom > asideRect.bottom
+                  ) {
+                    link.scrollIntoView({
+                      behavior: "smooth",
+                      block: "nearest",
+                    });
+                  }
+                }
+              });
+            }
+          });
+        }
+
+        window.addEventListener("scroll", highlightNavigation);
+        highlightNavigation();
+      });
+    </script>
+  </body>
+</html>
