@@ -14,19 +14,21 @@ async function build() {
   await fs.emptyDir(DIST_DIR);
   console.log("✅ Carpeta dist/ preparada.");
 
-  // 2. Procesar index.html
-  const htmlPath = path.join(__dirname, "index.html");
-  let htmlContent = await fs.readFile(htmlPath, "utf8");
-
-  // Minificar HTML
-  const minifiedHtml = await minifyHtml(htmlContent, {
-    collapseWhitespace: true,
-    removeComments: true,
-    minifyCSS: true,
-    minifyJS: true,
-  });
-  await fs.outputFile(path.join(DIST_DIR, "index.html"), minifiedHtml);
-  console.log("✅ index.html minificado.");
+  // 2. Procesar archivos HTML
+  const htmlFiles = ["index.html", "politicas.html"];
+  for (const file of htmlFiles) {
+    if (await fs.pathExists(path.join(__dirname, file))) {
+      let htmlContent = await fs.readFile(path.join(__dirname, file), "utf8");
+      const minifiedHtml = await minifyHtml(htmlContent, {
+        collapseWhitespace: true,
+        removeComments: true,
+        minifyCSS: true,
+        minifyJS: true,
+      });
+      await fs.outputFile(path.join(DIST_DIR, file), minifiedHtml);
+      console.log(`✅ ${file} minificado.`);
+    }
+  }
 
   // 3. Procesar JS (Ofuscación agresiva)
   const jsFiles = ["src/js/main.js", "src/js/tailwind.config.js"];
