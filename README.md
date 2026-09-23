@@ -8,30 +8,55 @@ Landing page oficial de VEXA. Diseñada para presentar nuestros servicios, porta
 
 - **Diseño UI/UX Premium:** Interfaz minimalista con estética de "glassmorphism" y modo oscuro optimizado.
 - **Totalmente Responsiva:** Experiencia fluida adaptada a cualquier dispositivo (Móvil, Tablet, Escritorio).
-- **Portafolio Interactivo:** Carrusel de proyectos integrado con vistas detalladas en modales dinámicos.
+- **Portafolio Interactivo:** Carrusel de proyectos con auto-scroll y página de casos de estudio detallados.
 - **Formulario Funcional:** Sistema de contacto directo e integrado sin necesidad de backend local.
-- **Rendimiento Óptimo:** Código limpio, sin dependencias pesadas innecesarias.
+- **Rendimiento Óptimo:** SPA compilada y minificada con Vite.
 
 ## 🛠️ Stack Tecnológico
 
-- **Estructura & Lógica:** HTML5, JavaScript (Vanilla)
-- **Estilos & Framework:** Tailwind CSS (v3)
-- **Tipografía & Iconos:** Google Fonts (Inter, Plus Jakarta Sans), Material Symbols
+- **Framework:** React 19 + TypeScript
+- **Build:** Vite
+- **Rutas:** React Router (`/`, `/proyectos`, `/politicas`)
+- **Estilos:** Tailwind CSS (v3) con plugins forms, typography y container-queries
+- **Tipografía & Iconos:** Google Fonts (Inter, Plus Jakarta Sans), Material Symbols, Devicon
 - **Animaciones:** Typed.js y transiciones nativas CSS
 
-## ⚙️ Despliegue Local
+## ⚙️ Desarrollo Local
 
-El proyecto está listo para usarse. No requiere instalaciones complejas ni procesos de compilación (build steps) adicionales.
+Requisitos: Node.js 20.19+ (recomendado 22).
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/vexa-dev/VexaPage.git
-   ```
-2. Navega al directorio del proyecto:
-   ```bash
-   cd VexaPage
-   ```
-3. Abre el archivo `index.html` directamente en tu navegador, o utiliza extensiones como **Live Server** en VS Code para una mejor experiencia de desarrollo.
+```bash
+git clone https://github.com/vexa-dev/VexaPage.git
+cd VexaPage
+npm install
+npm run dev
+```
+
+| Comando             | Descripción                                       |
+| ------------------- | ------------------------------------------------- |
+| `npm run dev`       | Servidor de desarrollo en `http://localhost:5173` |
+| `npm run build`     | Verifica tipos y genera el sitio en `dist/`       |
+| `npm run preview`   | Sirve localmente el build de producción           |
+| `npm run typecheck` | Solo verificación de tipos con TypeScript         |
+| `npm run format`    | Formatea el código con Prettier                   |
+
+## 📁 Estructura
+
+```
+public/              Archivos estáticos (logos, fotos del equipo, CNAME)
+src/
+  components/        Layout (Header, Footer, WhatsApp) e iconos
+  data/              Contenido tipado: navegación, portafolio, equipo, proyectos, políticas
+  hooks/             Scroll suave, scroll-spy, anclas entre páginas, Analytics
+  pages/             Home (secciones), Proyectos (un componente por proyecto) y Políticas
+  styles/            Estilos globales y directivas de Tailwind
+  types/             Tipos compartidos
+tailwind.config.ts   Colores, fuentes y animaciones de la marca
+```
+
+## 🚀 Despliegue
+
+Cada push a `main` ejecuta el workflow `.github/workflows/deploy.yml`, que compila el sitio y publica `dist/` en la rama `gh-pages` (GitHub Pages, dominio `vexa.space`). El build genera un `404.html` para que las rutas `/proyectos` y `/politicas` funcionen al entrar directamente o al recargar, y las URLs antiguas (`proyectos.html`, `politicas.html`) redirigen a las nuevas.
 
 ## 👥 Nuestro Equipo
 
@@ -43,7 +68,7 @@ El proyecto está listo para usarse. No requiere instalaciones complejas ni proc
 ## 📧 Contacto
 
 - **Email Corporativo:** vexa.corp@outlook.com
-- **WhatsApp:** [+51 Escríbenos directamente](https://wa.link/5ifr33)
+- **WhatsApp:** [Escríbenos directamente](https://wa.link/5ifr33)
 
 ---
 
