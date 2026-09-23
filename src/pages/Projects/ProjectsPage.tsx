@@ -1,15 +1,16 @@
-import { useDocumentTitle } from "../../hooks/useDocumentTitle";
+import { SITE } from "@/data/site";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { ProjectsSidebar } from "./ProjectsSidebar";
-import { Automotriz } from "./projects/Automotriz";
-import { Biblioteca } from "./projects/Biblioteca";
-import { Heladeria } from "./projects/Heladeria";
-import { IdeaSac } from "./projects/IdeaSac";
-import { Nutricraft } from "./projects/Nutricraft";
-import { Urbanwear } from "./projects/Urbanwear";
-import { VexaTask } from "./projects/VexaTask";
+import { Automotriz } from "./sections/Automotriz";
+import { Biblioteca } from "./sections/Biblioteca";
+import { Heladeria } from "./sections/Heladeria";
+import { IdeaSac } from "./sections/IdeaSac";
+import { Nutricraft } from "./sections/Nutricraft";
+import { Urbanwear } from "./sections/Urbanwear";
+import { VexaTask } from "./sections/VexaTask";
 
 export function ProjectsPage() {
-  useDocumentTitle("VEXA - Proyectos Destacados");
+  useDocumentTitle(SITE.titles.projects);
 
   return (
     <main className="pt-32 pb-24 relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 lg:gap-0">

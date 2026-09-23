@@ -1,4 +1,4 @@
-import type { SocialNetwork } from "../../types";
+import type { SocialNetwork } from "@/types";
 
 /** Paths SVG (viewBox 0 0 24 24) de los iconos de redes sociales. */
 export const SOCIAL_ICON_PATHS: Partial<Record<SocialNetwork, string>> = {

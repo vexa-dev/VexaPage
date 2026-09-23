@@ -43,16 +43,22 @@ npm run dev
 ## 📁 Estructura
 
 ```
+docs/                Documentación: marca, colores, tipografía, componentes, arquitectura…
 public/              Archivos estáticos (logos, fotos del equipo, CNAME)
 src/
-  components/        Layout (Header, Footer, WhatsApp) e iconos
-  data/              Contenido tipado: navegación, portafolio, equipo, proyectos, políticas
+  components/        Compartidos entre páginas: layout (Header, Footer, WhatsApp) e iconos
+  data/              Contenido y configuración tipados (sitio, navegación, portafolio, equipo…)
   hooks/             Scroll suave, scroll-spy, anclas entre páginas, Analytics
-  pages/             Home (secciones), Proyectos (un componente por proyecto) y Políticas
+  pages/             Una carpeta por ruta, cada una con sections/ y components/
   styles/            Estilos globales y directivas de Tailwind
   types/             Tipos compartidos
+  utils/             Utilidades (scroll animado)
 tailwind.config.ts   Colores, fuentes y animaciones de la marca
 ```
+
+## 📚 Documentación
+
+Toda la guía del sitio está en [`docs/`](docs/README.md): sistema de diseño (marca y logo, colores, tipografía, iconografía, layout, componentes, animaciones) y documentación técnica (arquitectura, guía de contenido y despliegue).
 
 ## 🚀 Despliegue
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { scrollToElement } from "../utils/smoothScroll";
+import { scrollToElement } from "@/utils/smoothScroll";
 
 /** Tiempo durante el cual se re-alinea el ancla mientras cargan imágenes y fuentes. */
 const SETTLE_MS = 3000;

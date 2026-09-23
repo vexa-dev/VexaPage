@@ -1,4 +1,4 @@
-import type { SocialNetwork } from "../../types";
+import type { SocialNetwork } from "@/types";
 import { SOCIAL_ICON_PATHS } from "./socialIconPaths";
 
 /** Icono de red social: SVG de marca o, si no hay, el símbolo "link" de Material. */

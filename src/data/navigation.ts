@@ -1,4 +1,4 @@
-import type { NavItem } from "../types";
+import type { NavItem } from "@/types";
 
 export const NAV_ITEMS: NavItem[] = [
   { id: "inicio", label: "Inicio", underline: true },
@@ -32,6 +32,3 @@ export const FOOTER_SERVICES = [
   "Sistemas CRM",
   "Consultoría Cloud",
 ];
-
-export const WHATSAPP_URL = "https://wa.link/5ifr33";
-export const CONTACT_EMAIL = "vexa.corp@outlook.com";

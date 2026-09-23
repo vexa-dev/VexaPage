@@ -1,7 +1,6 @@
 import { useState, type FormEvent } from "react";
-import { SuccessModal } from "./SuccessModal";
-
-const FORM_ENDPOINT = "https://formspree.io/f/mgolnlzd";
+import { SITE } from "@/data/site";
+import { SuccessModal } from "../components/SuccessModal";
 
 interface FormspreeError {
   errors?: { message: string }[];
@@ -18,7 +17,7 @@ export function Contact() {
     setSending(true);
 
     try {
-      const response = await fetch(FORM_ENDPOINT, {
+      const response = await fetch(SITE.formEndpoint, {
         method: "POST",
         body: new FormData(form),
         headers: { Accept: "application/json" },
@@ -61,7 +60,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-slate-500">Escríbenos</p>
-                  <p className="font-bold text-white">vexa.corp@outlook.com</p>
+                  <p className="font-bold text-white">{SITE.email}</p>
                 </div>
               </div>
             </div>
@@ -69,7 +68,7 @@ export function Contact() {
           <div className="bg-white/5 border border-white/10 p-8 rounded-2xl shadow-xl">
             <form
               id="contact-form"
-              action={FORM_ENDPOINT}
+              action={SITE.formEndpoint}
               method="POST"
               onSubmit={handleSubmit}
               className="space-y-6"

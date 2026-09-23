@@ -1,5 +1,6 @@
 import { copyFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 
@@ -22,6 +23,9 @@ function githubPagesSpaFallback(): Plugin {
 export default defineConfig({
   base: "/",
   plugins: [react(), githubPagesSpaFallback()],
+  resolve: {
+    alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) },
+  },
   build: {
     outDir: "dist",
     sourcemap: false,

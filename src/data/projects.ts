@@ -1,4 +1,4 @@
-import type { ProjectNavItem } from "../types";
+import type { ProjectNavItem } from "@/types";
 
 /** Índice lateral de /proyectos (en el mismo orden que las secciones). */
 export const PROJECT_NAV: ProjectNavItem[] = [

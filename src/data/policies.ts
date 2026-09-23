@@ -1,4 +1,4 @@
-import type { PolicyGroup } from "../types";
+import type { PolicyGroup } from "@/types";
 
 /** Índice lateral de /politicas. */
 export const POLICY_GROUPS: PolicyGroup[] = [

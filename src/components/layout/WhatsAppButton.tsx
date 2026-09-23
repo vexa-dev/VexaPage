@@ -1,10 +1,10 @@
-import { WHATSAPP_URL } from "../../data/navigation";
+import { SITE } from "@/data/site";
 
 export function WhatsAppButton() {
   return (
     <a
       className="fixed bottom-8 right-8 z-[100] w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(37,211,102,0.5)] hover:shadow-[0_0_30px_rgba(37,211,102,0.8)] animate-pulse-glow-lg hover:scale-125 active:scale-95 transition-all group"
-      href={WHATSAPP_URL}
+      href={SITE.whatsappUrl}
       target="_blank"
     >
       {/* Tooltip */}

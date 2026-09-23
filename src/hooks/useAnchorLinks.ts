@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { scrollToElement } from "../utils/smoothScroll";
+import { scrollToElement } from "@/utils/smoothScroll";
 
 /**
  * Intercepta los clics en enlaces internos (href="#seccion") para hacer

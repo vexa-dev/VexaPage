@@ -1,21 +1,42 @@
-# Dependencias
+# ---------- Dependencias ----------
 node_modules/
 
-# Build
+# ---------- Build y cachés ----------
 dist/
+dist-ssr/
 *.tsbuildinfo
+.vite/
+.cache/
+.eslintcache
+.stylelintcache
+coverage/
 
-# Entorno
+# ---------- Variables de entorno (pueden contener secretos) ----------
 .env
 .env.*
+!.env.example
+*.local
 
-# Logs
+# ---------- Logs ----------
+logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Editor / SO
+# ---------- Herramientas de IA / asistentes ----------
+.claude/
+CLAUDE.local.md
+
+# ---------- Editores ----------
 .vscode/*
 !.vscode/extensions.json
 .idea/
+*.swp
+*.swo
+
+# ---------- Sistema operativo ----------
 .DS_Store
 Thumbs.db
+Desktop.ini

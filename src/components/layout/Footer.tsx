@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FOOTER_QUICK_LINKS, FOOTER_SERVICES } from "../../data/navigation";
+import { FOOTER_QUICK_LINKS, FOOTER_SERVICES } from "@/data/navigation";
 import { SectionLink } from "./SectionLink";
 
 export function Footer() {

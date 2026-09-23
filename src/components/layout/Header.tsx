@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { HOME_SECTION_IDS, NAV_ITEMS } from "../../data/navigation";
-import { useHeaderScroll } from "../../hooks/useHeaderScroll";
-import { useScrollSpy } from "../../hooks/useScrollSpy";
-import type { NavItem } from "../../types";
+import { HOME_SECTION_IDS, NAV_ITEMS } from "@/data/navigation";
+import { useHeaderScroll } from "@/hooks/useHeaderScroll";
+import { useScrollSpy } from "@/hooks/useScrollSpy";
+import type { NavItem } from "@/types";
 import { SectionLink } from "./SectionLink";
 
 const LINK_BASE = "text-sm font-medium hover:text-primary transition-colors";

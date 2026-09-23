@@ -1,4 +1,4 @@
-import type { PortfolioProject } from "../types";
+import type { PortfolioProject } from "@/types";
 
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {

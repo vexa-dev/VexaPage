@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { PROJECT_NAV } from "../../data/projects";
-import { useScrollSpy } from "../../hooks/useScrollSpy";
+import { PROJECT_NAV } from "@/data/projects";
+import { useScrollSpy } from "@/hooks/useScrollSpy";
 
 const PROJECT_IDS = PROJECT_NAV.map((project) => project.id);
 const LINK_BASE =

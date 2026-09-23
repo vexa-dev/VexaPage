@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"*.{ts,js,json,html}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"docs/**/*.md\" \"*.{ts,js,json,html,md}\""
   },
   "repository": {
     "type": "git",
