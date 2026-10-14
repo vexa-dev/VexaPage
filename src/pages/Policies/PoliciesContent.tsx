@@ -1,5 +1,8 @@
+import { useComplaintsModal } from "@/context/ComplaintsModalContext";
+
 /** Texto legal de Políticas de Privacidad y Términos de Servicio. */
 export function PoliciesContent() {
+  const { openComplaintsModal } = useComplaintsModal();
   return (
     <div className="flex-1 min-w-0 lg:pl-12 lg:border-l lg:border-white/10">
       <div className="prose prose-invert prose-primary prose-a:text-primary hover:prose-a:text-primary/80 prose-headings:text-white max-w-none text-slate-300">
@@ -177,10 +180,20 @@ export function PoliciesContent() {
           8. Libro de Reclamaciones
         </h3>
         <p>
-          Conforme a la normativa vigente en Perú (Indecopi), ponemos a disposición de nuestros
+          Conforme a la normativa vigente en Perú (Indecopi y Ley N° 29571), ponemos a disposición de nuestros
           usuarios el Libro de Reclamaciones virtual para registrar cualquier queja o reclamo
           relacionado con nuestros servicios.
         </p>
+        <div className="not-prose mt-4">
+          <button
+            type="button"
+            onClick={openComplaintsModal}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary/10 border border-primary/30 text-primary font-semibold text-sm hover:bg-primary/20 transition-all cursor-pointer shadow-[0_0_15px_rgba(16,185,129,0.1)]"
+          >
+            <span className="material-symbols-outlined text-lg">menu_book</span>
+            Abrir Libro de Reclamaciones Virtual
+          </button>
+        </div>
         <h3 id="section-17" className="scroll-mt-24 mt-12 text-xl font-bold">
           9. Ley Aplicable
         </h3>

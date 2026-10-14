@@ -28,6 +28,8 @@ pnpm-debug.log*
 # ---------- Herramientas de IA / asistentes ----------
 .claude/
 CLAUDE.local.md
+.gemini/
+.agents/
 
 # ---------- Editores ----------
 .vscode/*

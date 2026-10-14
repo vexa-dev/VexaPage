@@ -6,6 +6,20 @@ export interface NavItem {
   underline: boolean;
 }
 
+export interface Project {
+  id: string;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  link?: string;
+  tags?: string[];
+  icon?: string;
+  problem?: string;
+  benefit?: string;
+  targetSector?: string;
+}
+
 export interface PortfolioProject {
   title: string;
   description: string;
@@ -21,6 +35,8 @@ export interface PortfolioProject {
   };
   /** fondo del overlay al hacer hover */
   overlay?: string;
+  /** Imagen de portada representativa para galerías y acordeón */
+  image?: string;
 }
 
 export type SocialNetwork = "github" | "linkedin" | "instagram" | "website" | "link";
@@ -30,10 +46,19 @@ export interface SocialLink {
   href: string;
 }
 
+export interface TeamHighlight {
+  label: string;
+  value: string;
+}
+
 export interface TeamMember {
   name: string;
   role: string;
   bio: string;
+  tag?: string;
+  headline?: string;
+  quote?: string;
+  highlights?: TeamHighlight[];
   photo?: { src: string; alt: string };
   socials: SocialLink[];
 }

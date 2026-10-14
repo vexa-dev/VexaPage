@@ -13,7 +13,7 @@ export function SuccessModal({ open, onClose }: SuccessModalProps) {
       }}
     >
       <div
-        className={`bg-[#111111] border border-white/10 rounded-2xl p-8 max-w-sm w-full mx-4 text-center transform transition-transform duration-300 ${open ? "scale-100" : "scale-95"}`}
+        className={`bg-[#111518] border border-white/10 rounded-2xl p-8 max-w-sm w-full mx-4 text-center transform transition-transform duration-300 ${open ? "scale-100" : "scale-95"}`}
         id="modal-content"
       >
         <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
